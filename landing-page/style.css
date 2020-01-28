@@ -1,7 +1,20 @@
 body {
     background-color: #F7F7FF;
+    width: 100%;
+    margin: auto;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+}
+
+main img {
+    height: 600px;
+    width: auto;
 }
 
 footer {
+    height: 180px;
     background-color: #FFFD8C;
 }
