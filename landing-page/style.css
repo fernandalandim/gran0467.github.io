@@ -97,6 +97,11 @@ main img {
     font-weight: 700;
 }
 
+.button-main {
+    background-color: #57EEAB;
+    color: #ffffff;
+}
+
 fieldset {
     padding: 5px;
 }
@@ -107,7 +112,6 @@ input {
     border-radius: 4px;
 }
 
-
 footer {
     width: 100%;
     height: 180px;
@@ -117,4 +121,15 @@ footer {
 /* The nth-child will target only the first P tag on the Footer container */
 footer p:nth-child(1) {
     font-weight: 700;
+}
+
+.button-footer {
+    background-color: #FF8480;
+    color: #ffffff;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
