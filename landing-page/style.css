@@ -54,6 +54,7 @@ body {
     margin: auto;
     /* This line is to import the font Monserrat */
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }
 
 header img {
@@ -61,26 +62,29 @@ header img {
     width: auto;
 }
 
+main {
+    margin: auto;
+    width: 80%;
+}
+
 main h1 {
-    font-size: 60pt;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
     font-weight: 700;
-    width: 536px;
     height: auto;
+}
+
+main p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 
 main img {
-    /* height: 600px;
-    width: auto; */
     width: 60%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .form-container {
-    /* width: 535px;
-    height: 590px; */
     width: 300px;
     height: 495px;
     background-color: #ffffff;
@@ -100,6 +104,11 @@ main img {
 .button-main {
     background-color: #57EEAB;
     color: #ffffff;
+}
+
+form a {
+    color: #FF8480;
+    text-decoration: none;
 }
 
 fieldset {
