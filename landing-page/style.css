@@ -143,6 +143,14 @@ footer {
     background-color: #FFFD8C;
 }
 
+footer.footer-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* The nth-child will target only the first P tag on the Footer container */
 footer p:nth-child(1) {
     font-weight: 700;
@@ -162,4 +170,18 @@ footer p:nth-child(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* The following items will be reorganized in a different order */
+.facebook {
+    order: 1;
+}
+.instagram {
+    order: 2;
+}
+.twitter {
+    order: 3;
+}
+.linkedin {
+    order: 4;
 }
