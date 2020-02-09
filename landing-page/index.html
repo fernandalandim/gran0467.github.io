@@ -19,11 +19,13 @@
             <img src="images/logo/logo.png" alt="Website's logo" />
         </div>
     </header>
-    <main>
-        <!-- The div with a class of "Container" will keep the information inside of all sections organized equally -->
-        <div class="container">
-            <h1>Want to be your own boss?</h1>
-            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+    <div class="container">
+        <main>
+            <!-- The div with a class of "Container" will keep the information inside of all sections organized equally -->
+            <div class="main-txt">
+                <h1>Want to be your own boss?</h1>
+                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            </div>
             <img src="images/bg-image/scooter.svg" alt="Girl riding a motorcycle" />
             <div class="form-container">
                 <h2>Apply Now</h2>
@@ -42,41 +44,52 @@
                         <input class="insert-info" placeholder="Phone number">
                     </fieldset>
                     <fieldset>
-                        <input type="checkbox" name="" value=""> I agree to dash terms
+                        <input type="checkbox"> I agree to dash terms
                     </fieldset>
                     <input type="submit" value="DRIVE WITH US" class="button-main">
                     <p>Already applied? <a href="#">Check your application status here?</a></p>
                 </form>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
+        </main>
+    </div>
+    <footer>
         <!-- The div with a class of "Container" will keep the information inside of all sections organized equally -->
         <div class="container">
-            <p>See how much you can earn with Dash.</p>
-            <p>How many hours do you want to drive with us this week?</p>
-            <form>
-                <fieldset class="info-hours">
-                    <input placeholder="Hours">
-                </fieldset>
-                <fieldset class="info-city">
-                    <input placeholder="City">
-                </fieldset>
-                <input type="submit" value="CALCULATE" class="button-footer">
-            </form>
+            <div class="footer-info">
+                <p>See how much you can earn with Dash.</p>
+                <p>How many hours do you want to drive with us this week?</p>
+                <form>
+                    <fieldset class="info-hours">
+                        <input placeholder="Hours">
+                    </fieldset>
+                    <fieldset class="info-city">
+                        <input placeholder="City">
+                    </fieldset>
+                    <input type="submit" value="CALCULATE" class="button-footer">
+                </form>
+            </div>
             <!-- This div will serve as a container to organize the Social Media icons and keep them together -->
             <div class="social-media-container">
+                <div class="facebook">
+                    <!-- A tag will make all the images below clickable -->
+                    <a href="#">
+                        <img src="images/icons/facebook.svg" alt="social media icon for facebook" />
+                    </a> 
+                </div>
                 <div class="instagram">
-                    <img src="images/icons/instagram.svg" href="#" />
+                    <a href="#">
+                        <img src="images/icons/instagram.svg" alt="social media icon for instagram" />
+                    </a>
                 </div>
                 <div class="twitter">
-                    <img src="images/icons/twitter.svg" href="#" />
-                </div>
-                <div class="facebook">
-                    <img src="images/icons/facebook.svg" href="#" />
+                    <a href="#">
+                        <img src="images/icons/twitter.svg" alt="social media icon for twitter" />
+                    </a>
                 </div>
                 <div class="linkedin">
-                    <img src="images/icons/linkedin.svg" href="#" />
+                    <a href="#">
+                        <img src="images/icons/linkedin.svg" alt="social media icon for linkedin"/>
+                    </a>
                 </div>
             </div>
         </div> 
