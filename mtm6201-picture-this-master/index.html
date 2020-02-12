@@ -15,9 +15,18 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture>
+      <!-- The lines of coding below will target small screens -->
+      <source srcset="images/museum-325_x_183.jpg 325w,
+      images/museum-960_x_540.jpg 540h,
+      images/museum-960_x_960.jpg 960w" media="(max-width: 960px)">
+      <!-- The lines of coding below will target large screens -->
+      <source srcset="images/museum-1280_x_1280.jpg 1280w,
+      images/museum-1440_x_810.jpg 1440w,
+      images/museum-1440_x_1440.jpg 1440h" media="(min-width: 960px)">
+    </picture>
 
+    <img src="images/museum.jpg" alt="Photo of a musem">
   </header>
 </body>
-
 </html>
