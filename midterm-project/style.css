@@ -78,6 +78,8 @@ div nav ul li {
 
 /** Styles for the Section container **/
 section {
+    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -90,8 +92,31 @@ section {
     background-color: #f2f2f2;
 }
 
+.second-content img {
+    width: 25%;
+}
+
 .third-content {
+    background-color: #3c3b3a;
+    color: #ffffff;
+    padding: 50px;
     /* Flexbox will organize the content of this container in rows */
     display: flex;
     flex-direction: row;
+}
+.third-content img {
+    width: 8%;
+    border-radius: 70px;
+}
+
+.fourth-content img {
+    width: 25%;
+}
+
+/** Styles for the Footer container **/
+footer {
+    margin: auto;
+    width: 100%;
+    height: 125px;
+    background-color: #3c3b3a;
 }
