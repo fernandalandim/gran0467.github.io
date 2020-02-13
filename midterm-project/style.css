@@ -51,7 +51,47 @@ table {
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #f2f2f2;
     font-size: 1rem;
     line-height: 1.2rem;
+}
+
+/** Styles for the Header container **/
+header {
+    margin: auto;
+    width: 100%;
+    height: 75px;
+}
+
+div nav {
+    background-color: #3c3b3a;
+    /* Flexbox will align the content to the end of the container. The right side of the browser */
+    display: flex;
+    justify-content: flex-end;
+}
+
+div nav ul li {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    display: inline-block;
+    margin-right: 139px;
+}
+
+/** Styles for the Section container **/
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+
+}
+
+.second-content {
+    background-color: #f2f2f2;
+}
+
+.third-content {
+    /* Flexbox will organize the content of this container in rows */
+    display: flex;
+    flex-direction: row;
 }
