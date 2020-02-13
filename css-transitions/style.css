@@ -1,0 +1,39 @@
+body {
+    max-width: 31rem;
+    margin:50px auto;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: lavender;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS transition animations starts here*/
+/* Longhanded version */
+/* .box {
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; 
+    transition-delay: 0.5s;
+} */
+/* shorthanded version */
+.box {
+    /*transition: background 0.3s ease-out 0.5s;  Property, Duration, Function, Delay */
+    transition: all 0.3s ease-out 0.5s;
+}
+
+/* Transform - Trasnslate function moves the object */
+.box {
+    transform: translate(50px, 100px);
+}
+
+/* Rotate */
+.box {
+    transform: rotate(360deg); /* It can also be turn, grad, rad*/
+   /* transform-origin: top left;  This is your anchor point */
+}
