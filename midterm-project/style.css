@@ -62,6 +62,10 @@ header {
     height: 75px;
 }
 
+div .logo {
+
+}
+
 div nav {
     background-color: #3c3b3a;
     /* Flexbox will align the content to the end of the container. The right side of the browser */
@@ -76,10 +80,29 @@ div nav ul li {
     margin-right: 139px;
 }
 
+/* This is the style for the events on the hyperlinks */
+a:link,
+a:visited {
+    color: #ffffff;
+    font-style: italic;
+}
+
+a:hover,
+a:active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
 /** Styles for the Section container **/
+
+div #content-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
 section {
     margin: auto;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
@@ -111,6 +134,19 @@ section {
 
 .fourth-content img {
     width: 25%;
+}
+
+div .button {
+    background-color: #26A682;
+    border-radius: 20px;
+    width: 10%;
+    height: 30px;
+    color: #ffffff;
+    /* This will align the text to the center of the button */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /** Styles for the Footer container **/
