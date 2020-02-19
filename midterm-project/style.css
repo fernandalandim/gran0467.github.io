@@ -111,6 +111,14 @@ section {
 
 }
 
+.discover-image {
+    width: 40%;
+}
+
+.athletic-icons {
+    display: flex;
+}
+
 .second-content {
     background-color: #f2f2f2;
 }
