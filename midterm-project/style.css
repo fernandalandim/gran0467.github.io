@@ -60,24 +60,20 @@ header {
     margin: auto;
     width: 100%;
     height: 75px;
-}
-
-div .logo {
-
-}
-
-div nav {
     background-color: #3c3b3a;
-    /* Flexbox will align the content to the end of the container. The right side of the browser */
-    display: flex;
-    justify-content: flex-end;
 }
 
-div nav ul li {
-    background-color: #3c3b3a;
+.header-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+div nav ul li a {
     color: #f2f2f2;
-    display: inline-block;
     margin-right: 139px;
+    /* Flexbox will align the content to the end of the container. The right side of the browser */
+    /* display: flex;
+    justify-content: flex-end; */
 }
 
 /* This is the style for the events on the hyperlinks */
@@ -95,20 +91,19 @@ a:active {
 
 /** Styles for the Section container **/
 
-div #content-wrapper {
+section {
     width: 100%;
     margin: auto;
 }
 
-section {
+.content-wrapper {
+    width: 100%;
     margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
 }
 
 .main-content {
-
+    width: 80%;
+    margin: auto;
 }
 
 .discover-image {
@@ -128,6 +123,7 @@ section {
 }
 
 .third-content {
+    width: 100%;
     background-color: #3c3b3a;
     color: #ffffff;
     padding: 50px;
@@ -163,4 +159,8 @@ footer {
     width: 100%;
     height: 125px;
     background-color: #3c3b3a;
+}
+
+.social-media p {
+    color: #ffffff;
 }
