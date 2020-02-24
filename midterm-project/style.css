@@ -80,15 +80,18 @@ div nav ul li a {
 a:link,
 a:visited {
     color: #ffffff;
-    font-style: italic;
 }
 
 a:hover,
 a:active {
     color: #ffffff;
-    font-weight: 600;
 }
 
+.active-page {
+    font-weight: 700;
+}
+
+/*** HOME PAGE ***/
 /** Styles for the Section container **/
 
 section {
@@ -151,6 +154,19 @@ div .button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*** ABOUT PAGE ***/
+/** Styles for the Section container **/
+
+.about img,
+.services img {
+    width: 100%;
+}
+
+.services-wrapper img,
+.sponsors-content img {
+    width: 25%;
 }
 
 /** Styles for the Footer container **/
