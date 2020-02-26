@@ -75,7 +75,7 @@ header {
 }
 
 div nav ul li {
-    padding: 10px;
+    padding: 10px 0px; /* top+bottom left+right*/
     width: 100%;
     margin: auto;
 }
@@ -115,17 +115,17 @@ div nav ul li:active {
 }
 
 .first-container {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
-.first-container h1 {
+.first-content h1 {
     margin: 30px 0px 15px 0px; /* top right bottom left */
     font-size: 3rem;
     line-height: 3.2rem;
 }
 
-.first-container p {
+.first-content p {
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-weight: 500;
@@ -137,7 +137,11 @@ div nav ul li:active {
 }
 
 .athletic-icons {
-
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .athletic-icons p {
@@ -148,15 +152,23 @@ div nav ul li:active {
 .first-container .button {
     width: 100%;
     height: 50px;
-    margin: auto;
+    margin: 10px auto;
     border-radius: 25px;
+    background-color: #26A682;
+    /* This will align the text to the center of the button */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-container .button h2 {
     font-size: 1.8rem;
     font-weight: 600;
+    color: #ffffff;
 }
 
+/* This line will hide the scroll-down call to action from the mobile viewport */
 .scroll-down {
     display: none;
 }
@@ -164,45 +176,85 @@ div nav ul li:active {
 .second-container {
     background-color: #f2f2f2;
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin: auto;
 }
 
 .second-content {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
-.second-content img {
+.second-container img {
     width: 100%;
     margin: auto;
 }
 
 .second-content h1 {
     font-size: 2rem;
+    font-weight: 700;
     font-style: italic;
+    margin: 30px 0px 15px 0px; /* top right bottom left */
 }
 
 .second-content h2 {
+    font-size: 1.2rem;
     color: #26A682;
+    margin-bottom: 10px;
+}
+
+.second-content p {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+.second-container .button {
+    width: 40%;
+    height: 45px;
+    margin: 10px auto;
+    border-radius: 25px;
+    background-color: #26A682;
+}
+
+.second-container .button h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .third-container {
     width: 100%;
     margin: auto;
+    height: 640px;
     background-color: #3c3b3a;
     color: #ffffff;
 }
 
 .third-content {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
-.third-content img {
+.third-container img {
     width: 40%;
+    margin: 20px auto; /* top+bottom left+right*/
     border: 4px solid #ffffff;
-    border-radius: 80px;
+    border-radius: 90px;
+}
+
+.third-content h3{
+    text-align: center;
+    font-size: 1.2rem; 
+    line-height: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.third-content p {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-weight: 500;
 }
 
 .fourth-container {
@@ -211,20 +263,45 @@ div nav ul li:active {
 }
 
 .fourth-content {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
-.fourth-content img {
+.fourth-container img {
     width: 100%;
     margin: auto;
 }
 
-.fourth-content .button {
+.fourth-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 30px 0px 15px 0px; /* top right bottom left */
+}
+
+.fourth-content h2 {
+    font-size: 1.2rem;
+    color: #26A682;
+    margin-bottom: 10px;
+}
+
+.fourth-content p {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+.fourth-container .button {
+    width: 40%;
+    height: 45px;
+    margin: 10px auto;
+    border-radius: 25px;
     background-color: #26A682;
-    border-radius: 20px;
-    width: 10%;
-    height: 30px;
+}
+
+.fourth-container .button h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
     color: #ffffff;
 }
 
