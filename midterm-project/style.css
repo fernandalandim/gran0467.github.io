@@ -121,14 +121,15 @@ div nav ul li:active {
 
 .first-content h1 {
     margin: 30px 0px 15px 0px; /* top right bottom left */
-    font-size: 3rem;
-    line-height: 3.2rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
 }
 
 .first-content p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .discover-image {
@@ -306,14 +307,123 @@ div nav ul li:active {
 }
 
 /*** ABOUT PAGE ***/
-/** Styles for the Section container **/
-
-.about img,
-.services img {
+/** Styles for the About container **/
+.about-container {
+    background-color: #f2f2f2;
     width: 100%;
+    height: 1300px;
+    margin: auto;
 }
 
-.services-wrapper img,
+.about-banner {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    /* The lines below will add the image to the background, and it will be underneath the H1 text */
+    background-image: url("images/about.jpg");
+    background-size: cover;
+    /* These styles will be added to the image in the selector above */
+    background-color: #26A682;
+    background-blend-mode: multiply;
+}
+
+.about-banner h1 {
+    font-size: 2rem;
+    font-style: bold;
+    color: #ffffff;
+}
+
+.about-content {
+    width: 80%;
+    margin: auto;
+}
+
+.about-content h2 {
+    margin: 30px 0px 15px 0px; /* top right bottom left */
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.about-content p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/** Styles for the Services container **/
+.services-container {
+    width: 100%;
+    height: 1400px;
+    margin: auto;
+}
+
+.services-banner {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    /* The lines below will add the image to the background, and it will be underneath the H1 text */
+    background-image: url("images/services.jpg");
+    background-size: cover;
+    /* These styles will be added to the image in the selector above */
+    background-color: #26A682;
+    background-blend-mode: multiply;
+}
+
+.services-banner h1 {
+    font-size: 2rem;
+    font-style: bold;
+    color: #ffffff;
+}
+
+.services-content {
+    width: 80%;
+    margin: auto;
+}
+
+/* The images will be hidden on the mobile version of the website */
+.content-box img {
+    display: none;
+}
+
+.services-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 30px 0px 15px 0px; /* top right bottom left */
+}
+
+.services-content h3 {
+    font-size: 1.5rem;
+    color: #26A682;
+    margin-bottom: 10px;
+}
+
+.services-content p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+.services:nth-child(3) {
+    background-color: #F2F2F2;
+}
+
+.info {
+    width: 100%;
+    height: 200px;
+    background-color: #3C3B3A;
+}
+
+/** Styles for the Sponsors container **/
+.sponsors-container {
+    width: 100%;
+    margin: auto;
+}
+
 .sponsors-content img {
     width: 25%;
 }
