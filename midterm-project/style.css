@@ -59,32 +59,47 @@ body {
 header {
     margin: auto;
     width: 100%;
-    height: 75px;
     background-color: #3c3b3a;
 }
 
 .header-wrapper {
-    width: 80%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.arc-logo img {
+    width: 20%;
+    margin: auto;
+}
+
+div nav ul li {
+    padding: 10px;
+    width: 100%;
     margin: auto;
 }
 
 div nav ul li a {
     color: #f2f2f2;
-    margin-right: 139px;
+    /* margin-right: 139px; */
     /* Flexbox will align the content to the end of the container. The right side of the browser */
     /* display: flex;
     justify-content: flex-end; */
 }
 
 /* This is the style for the events on the hyperlinks */
-a:link,
-a:visited {
+div nav ul li a:link,
+div nav ul li a:visited {
     color: #ffffff;
+    text-decoration: none;
+    width: 100%;
 }
 
-a:hover,
-a:active {
+div nav ul li:hover,
+div nav ul li:active {
     color: #ffffff;
+    background-color: #505050;
 }
 
 .active-page {
@@ -94,66 +109,123 @@ a:active {
 /*** HOME PAGE ***/
 /** Styles for the Section container **/
 
-section {
-    width: 100%;
-    margin: auto;
-}
-
 .content-wrapper {
     width: 100%;
     margin: auto;
 }
 
-.main-content {
-    width: 80%;
+.first-container {
+    width: 85%;
     margin: auto;
 }
 
+.first-container h1 {
+    margin: 30px 0px 15px 0px; /* top right bottom left */
+    font-size: 3rem;
+    line-height: 3.2rem;
+}
+
+.first-container p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
 .discover-image {
-    width: 40%;
+    width: 100%;
+    padding: 30px 0px 10px 0px; /* top right bottom left */
 }
 
 .athletic-icons {
-    display: flex;
+
+}
+
+.athletic-icons p {
+    font-size: 1.1rem;
+    color: #26A682;
+}
+
+.first-container .button {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.first-container .button h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.scroll-down {
+    display: none;
+}
+
+.second-container {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 500px;
+    margin: auto;
 }
 
 .second-content {
-    background-color: #f2f2f2;
+    width: 85%;
+    margin: auto;
 }
 
 .second-content img {
-    width: 25%;
+    width: 100%;
+    margin: auto;
+}
+
+.second-content h1 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.second-content h2 {
+    color: #26A682;
+}
+
+.third-container {
+    width: 100%;
+    margin: auto;
+    background-color: #3c3b3a;
+    color: #ffffff;
 }
 
 .third-content {
-    width: 100%;
-    background-color: #3c3b3a;
-    color: #ffffff;
-    padding: 50px;
-    /* Flexbox will organize the content of this container in rows */
-    display: flex;
-    flex-direction: row;
+    width: 85%;
+    margin: auto;
 }
+
 .third-content img {
-    width: 8%;
-    border-radius: 70px;
+    width: 40%;
+    border: 4px solid #ffffff;
+    border-radius: 80px;
+}
+
+.fourth-container {
+    width: 100%;
+    margin: auto;
+}
+
+.fourth-content {
+    width: 85%;
+    margin: auto;
 }
 
 .fourth-content img {
-    width: 25%;
+    width: 100%;
+    margin: auto;
 }
 
-div .button {
+.fourth-content .button {
     background-color: #26A682;
     border-radius: 20px;
     width: 10%;
     height: 30px;
     color: #ffffff;
-    /* This will align the text to the center of the button */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /*** ABOUT PAGE ***/
@@ -185,3 +257,65 @@ footer {
 .social-media p {
     color: #ffffff;
 }
+
+
+/*** BREAKPOINTS ***/
+/** DESKTOP VIEWPORT **/
+
+/* .content-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.main-content {
+    width: 80%;
+    margin: auto;
+}
+
+.discover-image {
+    width: 40%;
+}
+
+.athletic-icons {
+    display: flex;
+}
+
+.second-content {
+    background-color: #f2f2f2;
+}
+
+.second-content img {
+    width: 25%;
+}
+
+.third-content {
+    width: 100%;
+    background-color: #3c3b3a;
+    color: #ffffff;
+    padding: 50px;
+    /* Flexbox will organize the content of this container in rows */
+    /* display: flex;
+    flex-direction: row;
+} */
+
+/* .third-content img {
+    width: 8%;
+    border-radius: 70px;
+}
+
+.fourth-content img {
+    width: 25%;
+} */
+
+/* div .button {
+    background-color: #26A682;
+    border-radius: 20px;
+    width: 10%;
+    height: 30px;
+    color: #ffffff; */
+    /* This will align the text to the center of the button */
+    /*text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
