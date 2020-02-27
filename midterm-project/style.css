@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 
+/*** HOME PAGE ***/
 /*** This is the begining of my styles ***/
 
 body {
@@ -55,7 +56,7 @@ body {
     line-height: 1.2rem;
 }
 
-/** Styles for the Header container **/
+/** Styles for the HEADER **/
 header {
     margin: auto;
     width: 100%;
@@ -74,6 +75,10 @@ header {
     margin: auto;
 }
 
+div nav ul {
+    cursor: pointer;
+}
+
 div nav ul li {
     padding: 10px 0px; /* top+bottom left+right*/
     width: 100%;
@@ -81,6 +86,7 @@ div nav ul li {
 }
 
 div nav ul li a {
+    width: 100%;
     color: #f2f2f2;
     /* margin-right: 139px; */
     /* Flexbox will align the content to the end of the container. The right side of the browser */
@@ -100,15 +106,14 @@ div nav ul li:hover,
 div nav ul li:active {
     color: #ffffff;
     background-color: #505050;
+    width: 100%;
 }
 
 .active-page {
     font-weight: 700;
 }
 
-/*** HOME PAGE ***/
-/** Styles for the Section container **/
-
+/** Styles for the SECTION **/
 .content-wrapper {
     width: 100%;
     margin: auto;
@@ -307,7 +312,7 @@ div nav ul li:active {
 }
 
 /*** ABOUT PAGE ***/
-/** Styles for the About container **/
+/** Styles for the ABOUT container **/
 .about-container {
     background-color: #f2f2f2;
     width: 100%;
@@ -353,10 +358,10 @@ div nav ul li:active {
     margin-bottom: 20px;
 }
 
-/** Styles for the Services container **/
+/** Styles for the SERVICES container **/
 .services-container {
     width: 100%;
-    height: 1400px;
+    height: 1500px;
     margin: auto;
 }
 
@@ -381,7 +386,7 @@ div nav ul li:active {
 
 .services-content {
     width: 80%;
-    margin: auto;
+    margin: 20px auto; /* top+bottom left+right*/
 }
 
 /* The images will be hidden on the mobile version of the website */
@@ -408,20 +413,38 @@ div nav ul li:active {
     font-weight: 500;
 }
 
-.services:nth-child(3) {
-    background-color: #F2F2F2;
-}
-
 .info {
     width: 100%;
     height: 200px;
     background-color: #3C3B3A;
+    margin: auto;
 }
 
-/** Styles for the Sponsors container **/
+.info h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px auto;
+}
+
+/** Styles for the SPONSORS container **/
 .sponsors-container {
     width: 100%;
+    height: 100px;
     margin: auto;
+}
+
+.sponsors-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.sponsors-content h1{
+    font-size: 3.8rem;
+    line-height: 4rem;
+    font-weight: 700;
+
 }
 
 .sponsors-content img {
@@ -429,11 +452,138 @@ div nav ul li:active {
 }
 
 /*** CONTACT PAGE ***/
-/** Styles for the Form container **/
+/** Styles for the FORM container **/
+.contact-image {
+    width: 100%;
+    padding: 30px 0px 10px 0px; /* top right bottom left */
+}
 
+.form-wrapper {
+    width: 100%;
+    margin: auto;
+}
 
+.form {
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #26A682;
+    border-radius: 26px;
+    /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15); */
+}
 
-/** Styles for the Footer container **/
+.form h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .75rem;
+    color: #ffffff;
+}
+
+form label {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.insert-info {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    justify-content: stretch;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.message-box {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    justify-content: stretch;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #3C3B3A;
+    width: 100%;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 24px;
+    border: none;
+    /* This lines below will change the font styles on the button */
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* The following lines will be responsible to add the hover effect to the button */
+.submit-button:link,
+.submit-button:visited {
+    color: #f2f2f2;
+    background-color: #3C3B3A;
+}
+
+.submit-button:active,
+.submit-button:hover {
+    color: #ffffff;
+    background-color: #505050;
+}
+
+/* This line of styles will give some space between the fieldsets of the form */
+.form-wrapper fieldset {
+    padding: 4px 0px;
+}
+
+/** Styles for the LOCATION container **/
+.location-container {
+    width: 100%;
+    margin: auto;
+}
+
+.location-content {
+    width: 80%;
+    margin: auto;
+}
+
+.location-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px 0px 15px 0px; /* top right bottom left */
+}
+
+.location-content h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.location-content p {
+    font-size: 1rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+}
+
+.map-container {
+    width: 100%;
+    margin: auto;
+}
+
+.location-map {
+    width: 100%;
+    height: 250px;
+}
+
+/*** Styles for the Footer container ***/
 footer {
     margin: auto;
     width: 100%;
