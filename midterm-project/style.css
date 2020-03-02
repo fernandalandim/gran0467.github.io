@@ -621,9 +621,9 @@ footer {
         display: inline-block;
     }
 
-    nav ul li a {
-        /* margin-right: 139px; */
-    }
+    /*nav ul li a {
+         margin-right: 139px; 
+    }*/
 
     .arc-logo img {
         width: 10%;
@@ -703,6 +703,8 @@ footer {
         height: 375px;
     }
 
+    /** CONTACT PAGE **/
+   
     
 
     
@@ -712,65 +714,54 @@ footer {
 /** DESKTOP VIEWPORT **/
 
 @media (min-width: 1024px) {
+    .first-container {
+        background-color: lavender;
+    }
 
+    .discover-image {
+        width: 40%;
+    }
 
+    .athletic-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .second-content img {
+        width: 25%;
+    }
+
+    .third-container {
+        width: 100%;
+        margin: auto;
+        background-color: #3c3b3a;
+        color: #ffffff;
+        padding: 50px;
+        /* Flexbox will organize the content of this container in rows */
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .third-container img {
+        width: 8%;
+        border-radius: 70px;
+    }
+
+    .fourth-content img {
+        width: 25%;
+    } 
+
+    div .button {
+        background-color: #26A682;
+        border-radius: 20px;
+        width: 10%;
+        height: 30px;
+        color: #ffffff; */
+        /* This will align the text to the center of the button */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
 }
-
-
-/* .content-wrapper {
-    width: 100%;
-    margin: auto;
-}
-
-.main-content {
-    width: 80%;
-    margin: auto;
-}
-
-.discover-image {
-    width: 40%;
-}
-
-.athletic-icons {
-    display: flex;
-}
-
-.second-content {
-    background-color: #f2f2f2;
-}
-
-.second-content img {
-    width: 25%;
-}
-
-.third-content {
-    width: 100%;
-    background-color: #3c3b3a;
-    color: #ffffff;
-    padding: 50px;
-    /* Flexbox will organize the content of this container in rows */
-    /* display: flex;
-    flex-direction: row;
-} */
-
-/* .third-content img {
-    width: 8%;
-    border-radius: 70px;
-}
-
-.fourth-content img {
-    width: 25%;
-} */
-
-/* div .button {
-    background-color: #26A682;
-    border-radius: 20px;
-    width: 10%;
-    height: 30px;
-    color: #ffffff; */
-    /* This will align the text to the center of the button */
-    /*text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
