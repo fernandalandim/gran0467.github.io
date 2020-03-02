@@ -757,11 +757,11 @@ footer {
         border-radius: 20px;
         width: 10%;
         height: 30px;
-        color: #ffffff; */
+        color: #ffffff; 
         /* This will align the text to the center of the button */
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
+    }
 }
