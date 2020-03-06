@@ -357,8 +357,8 @@ div nav ul li:active {
     margin: auto;
     text-align: center;
     /* The lines below will add the image to the background, and it will be underneath the H1 text */
-    background-image: url("images/about.jpg");
-    background-size: cover;
+    /* background-image: url("images/about.jpg");
+    background-size: cover; */
     /* These styles will be added to the image in the selector above */
     background-color: #26A682;
     background-blend-mode: multiply;
@@ -402,8 +402,8 @@ div nav ul li:active {
     margin: auto;
     text-align: center;
     /* The lines below will add the image to the background, and it will be underneath the H1 text */
-    background-image: url("images/services.jpg");
-    background-size: cover;
+    /* background-image: url("images/services.jpg");
+    background-size: cover; */
     /* These styles will be added to the image in the selector above */
     background-color: #26A682;
     background-blend-mode: multiply;
