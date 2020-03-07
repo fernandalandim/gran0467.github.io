@@ -81,7 +81,14 @@
             </div>                    
             <div class="services-content">
                 <div class="services content-box">
-                    <img src="images/bar.jpg" alt="Photo of a bar" />
+                    <picture>
+                        <!-- The lines of coding below will target small screens -->
+                        <source srcset="images/bar_218x375.jpg 218w" media="(max-width: 960px)">
+                        <!-- The lines of coding below will target large screens -->
+                        <source srcset="images/bar_813x337.jpg 813w" media="(min-width: 960px)">
+                        <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
+                        <img src="images/bar.jpg" alt="Photo of a bar">
+                    </picture>
                     <h2>Need a break?</h2>
                     <h3>Restaurant & Lounge</h3>
                     <p>will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes!</p>
@@ -112,7 +119,14 @@
             </div>
             <div class="services-content">
                 <div class="services content-box">
-                    <img src="images/fitness.jpg" alt="Photo of barbell" />
+                    <picture>
+                        <!-- The lines of coding below will target small screens -->
+                        <source srcset="images/fitness_218x375.jpg 218w" media="(max-width: 960px)">
+                        <!-- The lines of coding below will target large screens -->
+                        <source srcset="images/fitness_813x337.jpg 813w" media="(min-width: 960px)">
+                        <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
+                        <img src="images/fitness.jpg" alt="Photo of barbell">
+                    </picture>
                     <h2>New year, new me.</h2>
                     <h3>Fitness Rooms</h3>
                     <p>Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located in strategically placed locations to best suit your work-out routine.. Indoor walking/running track that will test your endurancewith inclines and declines that weave around fitness nods, the gymnasiums and the lounge area.</p>
@@ -120,7 +134,14 @@
             </div>
             <div class="services-content">
                 <div class="services content-box">
-                    <img src="images/climbing.jpg" alt="Photo of rock climbing wall" />
+                    <picture>
+                        <!-- The lines of coding below will target small screens -->
+                        <source srcset="images/climbing_218x375.jpg 218w" media="(max-width: 960px)">
+                        <!-- The lines of coding below will target large screens -->
+                        <source srcset="images/climbing_813x337.jpg 813w" media="(min-width: 960px)">
+                        <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
+                        <img src="images/climbing.jpg" alt="Photo of rock climbing wall">
+                    </picture>
                     <h2>Indoor climbing?</h2>
                     <h3>Rock climbing</h3>
                     <p>Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area. </p>
@@ -140,27 +161,35 @@
         </div>
     </section>
     <footer>
+        <!-- <div class="button-top">
+            <a href="#">
+                <p>Back to top</p>
+                <img src="icons/arrow.svg" />
+            </a>
+        </div> -->
         <div class="footer-wrapper">
+            <p>Follow us</p>
             <div class="social-media">
-                <p>Follow us</p>
                 <div>
-                    <img src="icons/facebook.svg" alt="Facebook icon"/>
+                    <a>
+                        <img src="icons/facebook.svg" alt="Facebook icon"/>
+                    </a>
                 </div>
                 <div>
-                    <img src="icons/instagram.svg" alt="Instagram icon"/>
+                    <a>
+                        <img src="icons/instagram.svg" alt="Instagram icon"/>
+                    </a>
+                    </div>
+                <div>
+                    <a>
+                        <img src="icons/twitter.svg" alt="Twitter icon"/>
+                    </a>
                 </div>
                 <div>
-                    <img src="icons/twitter.svg" alt="Twitter icon"/>
+                    <a>
+                        <img src="icons/youtube.svg" alt="Youtube icon"/>
+                    </a>
                 </div>
-                <div>
-                    <img src="icons/youtube.svg" alt="Youtube icon"/>
-                </div>
-            </div>
-            <div class="button-top">
-                <a href="#">
-                    <p>Back to top</p>
-                    <img src="icons/arrow.svg" />
-                </a>
             </div>
         </div>
     </footer>

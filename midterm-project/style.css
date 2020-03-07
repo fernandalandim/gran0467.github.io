@@ -227,8 +227,10 @@ div nav ul li:active {
     margin: 10px auto;
     border-radius: 25px;
     background-color: #26A682;
+    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .second-container .button h2 {
@@ -416,7 +418,7 @@ div nav ul li:active {
 }
 
 .services-content {
-    width: 80%;
+    width: 80%; 
     margin: 20px auto; /* top+bottom left+right*/
 }
 
@@ -475,7 +477,6 @@ div nav ul li:active {
     font-size: 3.8rem;
     line-height: 4rem;
     font-weight: 700;
-
 }
 
 .sponsors-content img {
@@ -624,15 +625,32 @@ footer {
     color: #ffffff;
 }
 
+.footer-wrapper {
+    padding: auto 20px;
+    margin: auto 120px;
+}
+
+footer p {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+
 .social-media  {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.social-media a {
+    cursor: pointer;
+}
+
 .button-top {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    float: right;
 }
 
 
@@ -702,7 +720,6 @@ footer {
         height: 550px;
     }
 
-
     .third-container {
         height: 440px;
     }
@@ -730,6 +747,15 @@ footer {
     .content-box img {
         display: inline-block;
         height: 375px;
+    }
+
+    .services-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info {
+        height: 75px;
     }
 
     /** CONTACT PAGE **/
@@ -775,6 +801,10 @@ footer {
     .third-container img {
         width: 8%;
         border-radius: 70px;
+    }
+
+    .info {
+        height: 100px;
     }
 
     .fourth-content img {
