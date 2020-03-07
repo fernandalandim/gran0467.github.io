@@ -359,17 +359,19 @@ div nav ul li:active {
     margin: auto;
     text-align: center;
     /* The lines below will add the image to the background, and it will be underneath the H1 text */
-    /* background-image: url("images/about.jpg");
-    background-size: cover; */
+    background-image: url("images/about.jpg");
+    background-size: cover;
     /* These styles will be added to the image in the selector above */
     background-color: #26A682;
-    background-blend-mode: multiply;
+    background-blend-mode: multiply;    
 }
 
 .about-banner h1 {
     font-size: 2rem;
     font-style: bold;
     color: #ffffff;
+    text-align: center;
+    font-weight: 900;
 }
 
 .about-content {
@@ -404,8 +406,8 @@ div nav ul li:active {
     margin: auto;
     text-align: center;
     /* The lines below will add the image to the background, and it will be underneath the H1 text */
-    /* background-image: url("images/services.jpg");
-    background-size: cover; */
+    background-image: url("images/services.jpg");
+    background-size: cover;
     /* These styles will be added to the image in the selector above */
     background-color: #26A682;
     background-blend-mode: multiply;
@@ -415,6 +417,8 @@ div nav ul li:active {
     font-size: 2rem;
     font-style: bold;
     color: #ffffff;
+    text-align: center;
+    font-weight: 900;
 }
 
 .services-content {
@@ -635,7 +639,6 @@ footer p {
     padding: 20px;
 }
 
-
 .social-media  {
     display: flex;
     justify-content: space-around;
@@ -653,7 +656,6 @@ footer p {
     float: right;
 }
 
-
 /*** BREAKPOINTS ***/
 /** TABLET VIEWPORT **/
 @media (min-width: 768px) {
@@ -669,7 +671,9 @@ footer p {
     }
 
     /*nav ul li a {
-         margin-right: 139px; 
+         margin-right: 139px;
+		transition-duration: .5s; 
+	    transition-duration: .5s; 
     }*/
 
     .arc-logo img {
@@ -741,6 +745,15 @@ footer p {
         width: 80%;
         margin: auto;
         padding: 30px 0px 10px 0px; /* top right bottom left */
+    }
+
+    .about-banner {
+        background-repeat: no-repeat;
+        background-size: 100% auto; /* width x height */
+    }
+
+    .about-banner picture {
+        transform: translate(0px, 200px); /* position X Y */
     }
 
     /* Now it's okay to reveal these images */
