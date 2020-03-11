@@ -349,7 +349,6 @@ div nav ul li:active {
 .about-container {
     background-color: #f2f2f2;
     width: 100%;
-    height: 1300px;
     margin: auto;
 }
 
@@ -396,7 +395,6 @@ div nav ul li:active {
 /** Styles for the SERVICES container **/
 .services-container {
     width: 100%;
-    height: 1500px;
     margin: auto;
 }
 
@@ -467,7 +465,6 @@ div nav ul li:active {
 /** Styles for the SPONSORS container **/
 .sponsors-container {
     width: 100%;
-    height: 100px;
     margin: auto;
 }
 
@@ -670,11 +667,46 @@ footer p {
         display: inline-block;
     }
 
-    /*nav ul li a {
-         margin-right: 139px;
-		transition-duration: .5s; 
-	    transition-duration: .5s; 
-    }*/
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .nav-wrapper ul{
+        display: flex;
+    }
+    .nav-wrapper ul li{
+        margin: 10px;
+    }
+
+    .nav-wrapper {
+        margin-right: 20px; 
+    }
+    
+    div nav ul li a:link,
+    div nav ul li a:visited {
+        color: #ffffff;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    div nav ul li:hover,
+    div nav ul li:active {
+        color: #ffffff;
+        background-color: #505050;
+        width: 100%;
+        transition-duration: .5s; 
+	    transition-duration: .5s;
+    }
+
+
+    .arc-logo {
+        margin-left: 20px;
+    }
+    .arc-logo img {
+        width: 70px;
+    }
 
     .arc-logo img {
         width: 10%;
