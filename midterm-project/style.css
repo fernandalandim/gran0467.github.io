@@ -54,6 +54,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
@@ -92,6 +96,7 @@ div nav ul li {
 div nav ul li a {
     width: 100%;
     color: #f2f2f2;
+    display: inline-block;
 }
 
 /* This is the style for the events on the hyperlinks */
@@ -358,24 +363,28 @@ div nav ul li:active {
     margin: auto;
     text-align: center;
     /* The lines below will add the image to the background, and it will be underneath the H1 text */
-    background-image: url("images/about.jpg");
+    background-image: url("images/about_375x200.jpg");
     background-size: cover;
     /* These styles will be added to the image in the selector above */
     background-color: #26A682;
-    background-blend-mode: multiply;    
+    background-blend-mode: multiply; 
+    display: flex;
+    justify-content: center;
 }
 
 .about-banner h1 {
-    font-size: 2rem;
-    font-style: bold;
+    font-size: 2.6rem;
     color: #ffffff;
     text-align: center;
     font-weight: 900;
+    align-items: center;
+    align-self: center;
 }
 
 .about-content {
     width: 80%;
     margin: auto;
+    background-color: #F2F2F2;
 }
 
 .about-content h2 {
@@ -389,7 +398,6 @@ div nav ul li:active {
     font-size: 1.3rem;
     line-height: 2.3rem;
     font-weight: 500;
-    margin-bottom: 20px;
 }
 
 /** Styles for the SERVICES container **/
@@ -409,19 +417,27 @@ div nav ul li:active {
     /* These styles will be added to the image in the selector above */
     background-color: #26A682;
     background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
 }
 
 .services-banner h1 {
-    font-size: 2rem;
-    font-style: bold;
+    font-size: 2.6rem;
     color: #ffffff;
     text-align: center;
     font-weight: 900;
+    align-items: center;
+    align-self: center;
 }
 
 .services-content {
     width: 80%; 
     margin: 20px auto; /* top+bottom left+right*/
+}
+
+/* This line will add a different background color to an even number of divs inside the Services container */
+.services-content:nth-child(even) {
+    background-color: #F2F2F2;
 }
 
 /* The images will be hidden on the mobile version of the website */
@@ -453,10 +469,34 @@ div nav ul li:active {
     height: 200px;
     background-color: #3C3B3A;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info .button {
+    width: 40%;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 25px;
+    background-color: #26A682;
+    /* This will align the text to the center of the button */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h2 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px auto;
 }
 
 .info h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #ffffff;
     text-align: center;
     padding: 20px auto;
@@ -480,8 +520,24 @@ div nav ul li:active {
     font-weight: 700;
 }
 
-.sponsors-content img {
+.algonquin-sa {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.algonquin-college {
+    width: 40%;
+    margin: 20px auto;
+}
+
+.pcl {
+    width: 40%;
+    margin: 20px auto;
+}
+
+.cibc {
     width: 30%;
+    margin: 20px auto;
 }
 
 .sponsors-logos {
@@ -540,6 +596,15 @@ form label {
     font-size: 1rem;
 }
 
+fieldset input[placeholder] {
+    padding-left: 20px;
+}
+
+fieldset textarea[placeholder] {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
 .message-box {
     width: 100%;
     height: 100px;
@@ -563,7 +628,7 @@ form label {
     border: none;
     /* This lines below will change the font styles on the button */
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
@@ -635,7 +700,7 @@ footer {
     margin: auto 120px;
 }
 
-footer p {
+.foot-wrapper p {
     font-size: 1.5rem;
     padding: 20px;
 }
@@ -651,20 +716,28 @@ footer p {
 }
 
 .button-top {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    float: right;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #3c3b3a;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-top img {
+    width: 20px;
+    height: 20px;
+}
+
+.button-top p {
+    font-size: .7rem;
+    color: #ffffff;
 }
 
 /*** BREAKPOINTS ***/
 /** TABLET VIEWPORT **/
 @media (min-width: 768px) {
     /** HOME PAGE **/
-   .first-container {
-        background-color: yellow;
-    }
-
     .header-wrapper {
         width: 100%;
         color: #f2f2f2;
@@ -687,9 +760,9 @@ footer p {
     .nav-wrapper {
         margin-right: 20px; 
     }
-    
-    div nav ul li a:link,
-    div nav ul li a:visited {
+
+    div nav ul li:link,
+    div nav ul li:visited {
         color: #ffffff;
         text-decoration: none;
         width: 100%;
@@ -701,19 +774,14 @@ footer p {
         background-color: #505050;
         width: 100%;
         transition-duration: .5s; 
-	    transition-duration: .5s;
     }
-
 
     .arc-logo {
         margin-left: 20px;
     }
-    .arc-logo img {
-        width: 70px;
-    }
 
     .arc-logo img {
-        width: 10%;
+        width: 50px;
     }
 
     .first-content h1 {
@@ -756,14 +824,6 @@ footer p {
         justify-content: center;
     }
 
-    .second-container {
-        height: 550px;
-    }
-
-    .third-container {
-        height: 440px;
-    }
-
     .third-container img {
         width: 15%;
         border: 4px solid #ffffff;
@@ -772,7 +832,6 @@ footer p {
 
     .fourth-container {
         width: 100%;
-        height: 600px;
         margin: auto;
     }
 
@@ -792,16 +851,22 @@ footer p {
         transform: translate(0px, 200px); /* position X Y */
     }
 
+    .services-container {
+        width: 100%;
+        margin: auto;
+    }
+
     /* Now it's okay to reveal these images */
     .content-box img {
         display: inline-block;
+        width: 100%;
         height: 375px;
     }
 
-    .services-content {
+    /* .content-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 
     .info {
         height: 75px;
@@ -818,10 +883,6 @@ footer p {
 /** DESKTOP VIEWPORT **/
 
 @media (min-width: 1024px) {
-    .first-container {
-        background-color: lavender;
-    }
-
     .discover-image {
         width: 40%;
     }
