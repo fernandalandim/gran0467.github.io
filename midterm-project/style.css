@@ -930,9 +930,8 @@ footer {
         background-color: #3c3b3a;
         color: #ffffff;
         padding: 50px;
-        /* Flexbox will organize the content of this container in rows */
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
     } 
 
     .third-container img {
