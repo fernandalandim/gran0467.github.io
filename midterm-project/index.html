@@ -65,7 +65,15 @@
             </div>
         </div>
         <div class="second-container">
-                <img src="images/school.jpg" alt="Photo of students outdoors" />
+            <picture>
+                <!-- The lines of coding below will target small screens -->
+                <source srcset="images/school_375x200.jpg 315w" media="(max-width: 768px)">
+                <!-- The lines of coding below will target large screens -->
+                <source srcset="images/school_768x200.jpg 768w,
+                images/school_813x337.jpg 813w" media="(min-width: 768px)">
+                <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
+                <img src="images/school.jpg" alt="Photo of students outdoors">
+            </picture>
             <div class="second-content">
                 <h1>Discover.</h1>
                 <h2>Algonquin College</h2>
@@ -87,7 +95,15 @@
             </div>
         </div>
         <div class="fourth-container">
-            <img src="images/entertainment.jpg" alt="Photo of young woman with a beer glass" />
+            <picture>
+                <!-- The lines of coding below will target small screens -->
+                <source srcset="images/entertainment_375x200.jpg 315w" media="(max-width: 768px)">
+                <!-- The lines of coding below will target large screens -->
+                <source srcset="images/entertainment_768x200.jpg 768w,
+                images/entertainment_813x337.jpg 813w" media="(min-width: 768px)">
+                <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
+                <img src="images/entertainment.jpg" alt="Photo of young woman with a beer glass">
+            </picture>
             <div class="fourth-content">
                 <h1>Discover.</h1>
                 <h2>The entertainment</h2>

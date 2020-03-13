@@ -104,14 +104,13 @@ div nav ul li a:link,
 div nav ul li a:visited {
     color: #ffffff;
     text-decoration: none;
-    width: 100%;
 }
 
 div nav ul li:hover,
 div nav ul li:active {
     color: #ffffff;
     background-color: #505050;
-    width: 100%;
+    transition: all .5s ease-out;
 }
 
 .active-page {
@@ -187,13 +186,11 @@ div nav ul li:active {
 /* This line will hide the scroll-down call to action from the mobile viewport */
 .scroll-down {
     display: none;
-    /* transform: rotate(180deg); */
 }
 
 .second-container {
     background-color: #f2f2f2;
     width: 100%;
-    height: 800px;
     margin: auto;
 }
 
@@ -248,7 +245,6 @@ div nav ul li:active {
 .third-container {
     width: 100%;
     margin: auto;
-    height: 640px;
     background-color: #3c3b3a;
     color: #ffffff;
 }
@@ -261,7 +257,6 @@ div nav ul li:active {
 /* Dijanelle Simon photo */
 .third-container {
     width: 100%;
-    height: 700px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -388,16 +383,17 @@ div nav ul li:active {
 }
 
 .about-content h2 {
-    margin: 30px 0px 15px 0px; /* top right bottom left */
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
+    padding: 20px 0px; /* top+bottom left+right */
 }
 
 .about-content p {
     font-size: 1.3rem;
     line-height: 2.3rem;
     font-weight: 500;
+    padding: 20px 0px; /* top+bottom left+right */
 }
 
 /** Styles for the SERVICES container **/
@@ -430,14 +426,16 @@ div nav ul li:active {
     align-self: center;
 }
 
-.services-content {
+.content-box {
     width: 80%; 
-    margin: 20px auto; /* top+bottom left+right*/
+    margin: auto; /* top+bottom left+right*/
 }
 
 /* This line will add a different background color to an even number of divs inside the Services container */
-.services-content:nth-child(even) {
+.zebra-pattern {
     background-color: #F2F2F2;
+    width: 100%;
+    margin: auto;
 }
 
 /* The images will be hidden on the mobile version of the website */
@@ -445,23 +443,25 @@ div nav ul li:active {
     display: none;
 }
 
-.services-content h2 {
+.content-box h2 {
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
-    margin: 30px 0px 15px 0px; /* top right bottom left */
+    padding: 20px 0px 10px 0px; /* top right bottom left */
 }
 
-.services-content h3 {
+.content-box h3 {
     font-size: 1.5rem;
     color: #26A682;
     margin-bottom: 10px;
+    padding: 20px 0px 10px 0px; /* top right bottom left */
 }
 
-.services-content p {
+.content-box p {
     font-size: 1.4rem;
     line-height: 2.4rem;
     font-weight: 500;
+    padding: 20px 0px 10px 0px; /* top right bottom left */
 }
 
 .info {
@@ -518,6 +518,14 @@ div nav ul li:active {
     font-size: 3.8rem;
     line-height: 4rem;
     font-weight: 700;
+    padding: 20px 0px; /* top+bottom left+right */
+}
+
+.sponsors-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .algonquin-sa {
@@ -537,15 +545,6 @@ div nav ul li:active {
 
 .cibc {
     width: 30%;
-    margin: 20px auto;
-}
-
-.sponsors-logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
     margin: 20px auto;
 }
 
@@ -680,11 +679,6 @@ fieldset textarea[placeholder] {
     font-weight: 500;
 }
 
-.map-container {
-    width: 100%;
-    margin: auto;
-}
-
 /*** Styles for the Footer container ***/
 footer {
     margin: auto;
@@ -700,15 +694,19 @@ footer {
     margin: auto 120px;
 }
 
-.foot-wrapper p {
+.footer-wrapper p {
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .social-media  {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.social-media img {
+    margin: auto 10px;
 }
 
 .social-media a {
@@ -731,7 +729,7 @@ footer {
 
 .button-top p {
     font-size: .7rem;
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 /*** BREAKPOINTS ***/
@@ -750,34 +748,28 @@ footer {
         justify-content: space-between
     }
 
-    .nav-wrapper ul{
-        display: flex;
-    }
-    .nav-wrapper ul li{
-        margin: 10px;
-    }
-
     .nav-wrapper {
-        margin-right: 20px; 
+        margin-right: 80px; 
+        text-align: center;
     }
 
-    div nav ul li:link,
-    div nav ul li:visited {
-        color: #ffffff;
-        text-decoration: none;
-        width: 100%;
+    nav ul {
+        display: flex;
+        
+    }
+    
+    nav ul li {
+        width: auto;
+        margin: auto;
     }
 
-    div nav ul li:hover,
-    div nav ul li:active {
-        color: #ffffff;
-        background-color: #505050;
-        width: 100%;
-        transition-duration: .5s; 
+    nav ul li a {
+        display: inline-block;
+        padding: 10px;
     }
 
     .arc-logo {
-        margin-left: 20px;
+        margin-left: 80px;
     }
 
     .arc-logo img {
@@ -820,14 +812,46 @@ footer {
 
     /* Now it's okay to reveal the scroll-down call to action */
     .scroll-down {
-        display: flex;
+        display: grid;
+        flex-direction: row;
         justify-content: center;
+        padding: 10px;
+        text-align: center;
+        /*** CSS Animation for the "scroll down" event ***/
+        
+    }
+
+    .scroll-down img {
+        transform: rotate(180deg); /* This will make the image rotate 180 degrees */
+        width: 25px;
+        height: 25px;
+    }
+
+    .scroll-down p {
+        font-size: 1rem;
+    }
+
+    .third-container {
+        display: grid;
+        grid-template-columns: 40% 60%;
     }
 
     .third-container img {
-        width: 15%;
+        width: 30%;
         border: 4px solid #ffffff;
-        border-radius: 100px;
+        border-radius: 100%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .third-container h3{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .third-container p {
+        grid-row: 1 / span 4;
+        grid-column: 1 / span 4;
     }
 
     .fourth-container {
@@ -848,7 +872,7 @@ footer {
     }
 
     .about-banner picture {
-        transform: translate(0px, 200px); /* position X Y */
+        transform: translateY(200px);
     }
 
     .services-container {
@@ -860,7 +884,6 @@ footer {
     .content-box img {
         display: inline-block;
         width: 100%;
-        height: 375px;
     }
 
     /* .content-box {
@@ -872,17 +895,11 @@ footer {
         height: 75px;
     }
 
-    /** CONTACT PAGE **/
-   
-    
-
-    
-
 }
 
 /** DESKTOP VIEWPORT **/
-
 @media (min-width: 1024px) {
+    /* HOME PAGE*/
     .discover-image {
         width: 40%;
     }
@@ -891,6 +908,16 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .scroll-down img {
+        transform: rotate(180deg); /* This will make the image rotate 180 degrees */
+        width: 50px;
+        height: 50px;
+    }
+
+    .scroll-down p {
+        font-size: 1rem;
     }
 
     .second-content img {
@@ -932,5 +959,72 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* ABOUT PAGE */
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 20px auto;
+        padding: 10px 5px;
+    }
+
+    .about-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        padding: 10px;
+    }
+
+    .sponsors-content h1 {
+        font-size: 4rem;
+    }
+
+    .sponsors-logos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .algonquin-sa {
+        width: 30%;
+        margin: 20px auto;
+    }
+    
+    .algonquin-college {
+        width: 15%;
+        margin: 20px auto;
+    }
+    
+    .pcl {
+        width: 15%;
+        margin: 20px auto;
+    }
+    
+    .cibc {
+        width: 10%;
+        margin: 20px auto;
+    }
+    
+    /* CONTACT PAGE */
+    .content-wrapper {
+        display: grid;
+    }
+    .contact-image {
+        width: 30%;
+    }
+
+    .location-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .location-map {
+        display: grid;
+        justify-content: stretch;
+        align-items: center;
+        margin-right: 140px;
     }
 }
