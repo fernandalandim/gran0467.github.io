@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <!-- Link to the font Raleway -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-   <!-- Link to add the favicon to the HTML page -->
-   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Link to add the favicon to the HTML page -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Midterm Project - ARC</title>
 </head>
+
 <body>
     <header>
         <div class="header-wrapper">
             <div class="arc-logo">
-                <img src="images/logo.svg" alt="ARC logo"/>
+                <img src="images/logo.svg" alt="ARC logo" />
             </div>
             <div class="nav-wrapper">
-                <nav> 
+                <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -31,48 +33,54 @@
     </header>
     <section class="content-wrapper">
         <div class="first-container">
-            <div class="first-content">
-                <h1>We Want to Hear From You</h1>
-                <p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
-                <img class="contact-image" src="images/contact-img.svg" alt="Vector image of contact methods" />
+            <div class="center-container">
+                <div class="first-content">
+                    <h1>We Want to Hear From You</h1>
+                    <p>If you have an idea for an activity that you think you and your fellow students would love to
+                        participate in that we are not already offering, we want to know about it!</p>
+                    <img class="contact-image" src="images/contact-img.svg" alt="Vector image of contact methods" />
+                </div>
+
+                <div class="form-wrapper">
+                    <div class="form">
+                        <h2>Contact us.</h2>
+                        <form>
+                            <fieldset>
+                                <label>Full Name</label>
+                                <input class="insert-info" placeholder="Full Name">
+                            </fieldset>
+                            <fieldset>
+                                <label>Student Number</label>
+                                <input class="insert-info" placeholder="Student Number">
+                            </fieldset>
+                            <fieldset>
+                                <label>Email</label>
+                                <input class="insert-info" placeholder="Email">
+                            </fieldset>
+                            <fieldset>
+                                <label>Message</label>
+                                <textarea class="message-box" placeholder="Message"></textarea>
+                            </fieldset>
+                            <a href="#">
+                                <input type="submit" value="Submit" class="submit-button">
+                            </a>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-            <div class="form-wrapper">
-                <div class="form">
-                    <h2>Contact us.</h2>
-                    <form>
-                        <fieldset>
-                            <label>Full Name</label>
-                            <input class="insert-info" placeholder="Full Name">
-                        </fieldset>
-                        <fieldset>
-                            <label>Student Number</label>
-                            <input class="insert-info" placeholder="Student Number">
-                        </fieldset>
-                        <fieldset>
-                            <label>Email</label>
-                            <input class="insert-info" placeholder="Email">
-                        </fieldset>
-                        <fieldset>
-                            <label>Message</label>
-                            <textarea class="message-box" placeholder="Message"></textarea>
-                        </fieldset>
-                        <a href="#">
-                            <input type="submit" value="Submit" class="submit-button">
-                        </a> 
-                    </form>
-                </div>
+        <div class="location-container">
+            <div class="location-content">
+                <h1>Our Location.</h1>
+                <h2>Algonquin College </br> Students' Association</h2>
+                <p>Monday to Friday – 8:30am to 6:00pm </br> 1385 Woodroffe Avenue (E114) </br> Ottawa, Ontario </br>
+                    K2G 1V8 </br> (613) 727-4723 x7711</p>
+                <!-- </br> is a line breaker tag to split the text in two lines -->
             </div>
-            <div class="location-container">
-                <div class="location-content">
-                    <h1>Our Location.</h1>
-                    <h2>Algonquin College </br> Students' Association</h2>
-                    <p>Monday to Friday – 8:30am to 6:00pm </br> 1385 Woodroffe Avenue (E114) </br> Ottawa, Ontario </br> K2G 1V8 </br> (613) 727-4723 x7711</p>
-                    <!-- </br> is a line breaker tag to split the text in two lines -->
-                </div>
-                <div class="location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.038962663557!2d-75.75911148471678!3d45.348025749209306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1spt-BR!2sca!4v1582598815731!5m2!1spt-BR!2sca" width="100%" height="250px"></iframe>
-                </div>
+            <div class="location-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.038962663557!2d-75.75911148471678!3d45.348025749209306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1spt-BR!2sca!4v1582598815731!5m2!1spt-BR!2sca"
+                    width="100%" height="250px"></iframe>
             </div>
         </div>
     </section>
@@ -88,26 +96,27 @@
             <div class="social-media">
                 <div>
                     <a>
-                        <img src="icons/facebook.svg" alt="Facebook icon"/>
+                        <img src="icons/facebook.svg" alt="Facebook icon" />
                     </a>
                 </div>
                 <div>
                     <a>
-                        <img src="icons/instagram.svg" alt="Instagram icon"/>
-                    </a>
-                    </div>
-                <div>
-                    <a>
-                        <img src="icons/twitter.svg" alt="Twitter icon"/>
+                        <img src="icons/instagram.svg" alt="Instagram icon" />
                     </a>
                 </div>
                 <div>
                     <a>
-                        <img src="icons/youtube.svg" alt="Youtube icon"/>
+                        <img src="icons/twitter.svg" alt="Twitter icon" />
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <img src="icons/youtube.svg" alt="Youtube icon" />
                     </a>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

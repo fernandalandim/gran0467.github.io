@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -82,7 +83,9 @@ header {
     width: 20%;
     margin: auto;
 }
-
+.button a h2 {
+    margin-bottom: 0;
+}
 div nav ul {
     cursor: pointer;
 }
@@ -121,6 +124,11 @@ div nav ul li:active {
 .content-wrapper {
     width: 100%;
     margin: auto;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .first-container {
@@ -194,7 +202,22 @@ div nav ul li:active {
     margin: auto;
 }
 
-.second-content {
+.picture {
+    width: 100%;
+    height: 200px;
+    background: center center no-repeat;
+}
+
+.second-pic {
+    background-image: url(images/school_375x200.jpg);
+    background-size: cover;
+}
+
+.second-container {
+    padding-bottom: 20px;
+}
+
+.discover-content {
     width: 80%;
     margin: auto;
 }
@@ -204,29 +227,29 @@ div nav ul li:active {
     margin: auto;
 }
 
-.second-content h1 {
+.discover-content h1 {
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
     margin: 30px 0px 15px 0px; /* top right bottom left */
 }
 
-.second-content h2 {
+.discover-content h2 {
     font-size: 1.2rem;
     color: #26A682;
     margin-bottom: 10px;
 }
 
-.second-content p {
+.discover-content p {
     font-size: 1.3rem;
     line-height: 2.4rem;
     font-weight: 500;
 }
 
-.second-container .button {
+.discover-content .button {
     width: 40%;
     height: 45px;
-    margin: 10px auto;
+    margin: 10px 0 0 auto;
     border-radius: 25px;
     background-color: #26A682;
     text-align: center;
@@ -235,7 +258,7 @@ div nav ul li:active {
     align-items: center;
 }
 
-.second-container .button h2 {
+.discover-content .button h2 {
     font-size: 1.2rem;
     font-weight: 600;
     color: #ffffff;
@@ -249,93 +272,47 @@ div nav ul li:active {
     color: #ffffff;
 }
 
-.third-content {
-    width: 80%;
-    margin: auto;
-}
-
 /* Dijanelle Simon photo */
-.third-container {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-.third-container img {
+.third-container .img {
+    display: flex;
+}
+.third-container .img h3{ 
+    display: none;
+}
+.third-container .img img {
     width: 40%;
     margin: 20px auto; /* top+bottom left+right*/
     border: 4px solid #ffffff;
     border-radius: 100%;
 }
 
-.third-content h3{
+.third-container h3{
     text-align: center;
     font-size: 1.2rem; 
     line-height: 1.6rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    width: 80%;
 }
 
-.third-content p {
+.third-container p {
     font-size: 1.3rem;
     line-height: 2.4rem;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    width: 80%;
 }
 
 .fourth-container {
     width: 100%;
     margin: auto;
+    padding-bottom: 20px;
 }
 
-.fourth-content {
-    width: 80%;
-    margin: auto;
-}
-
-.fourth-container img {
-    width: 100%;
-    margin: auto;
-}
-
-.fourth-content h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    font-style: italic;
-    margin: 30px 0px 15px 0px; /* top right bottom left */
-}
-
-.fourth-content h2 {
-    font-size: 1.2rem;
-    color: #26A682;
-    margin-bottom: 10px;
-}
-
-.fourth-content p {
-    font-size: 1.3rem;
-    line-height: 2.4rem;
-    font-weight: 500;
-}
-
-.fourth-container .button {
-    width: 40%;
-    height: 45px;
-    margin: 10px auto;
-    border-radius: 25px;
-    background-color: #26A682;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fourth-container .button h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
+.fourth-pic {
+    background-image: url(images/entertainment_375x200.jpg);
+    background-size: cover;
 }
 
 /*** ABOUT PAGE ***/
@@ -716,7 +693,7 @@ footer {
 .button-top {
     position: fixed;
     bottom: 40px;
-    right: 40px;
+    right: 16px;
     background-color: #3c3b3a;
     border-radius: 5px;
     padding: 5px;
@@ -806,6 +783,11 @@ footer {
         grid-template-rows: 1fr;
     }
 
+    .athletic-icons p {
+        font-size: 1rem;
+        color: #26A682;
+    }
+
     .first-container .button {
         width: 50%;
     }
@@ -817,8 +799,6 @@ footer {
         justify-content: center;
         padding: 10px;
         text-align: center;
-        /*** CSS Animation for the "scroll down" event ***/
-        
     }
 
     .scroll-down img {
@@ -827,31 +807,56 @@ footer {
         height: 25px;
     }
 
+    .picture {
+        width: 100%;
+        height: 200px;
+    }
+    .second-pic {
+        background-image: url(images/school_768x200.jpg);
+        background-size: cover;
+    }
+
+    .fourth-pic {
+        background-image: url(images/entertainment_768x200.jpg);
+        background-size: cover;
+    }
+
+    .second-container {
+        padding-bottom: 20px;
+    }
+
     .scroll-down p {
         font-size: 1rem;
     }
 
-    .third-container {
-        display: grid;
-        grid-template-columns: 40% 60%;
+    .third-container .center-container{
+        flex-flow: row;
+        width: 80%;
+        margin: auto;
     }
 
-    .third-container img {
-        width: 30%;
+    .third-container .img img {
+        width: 175px;
+        height: 175px;
+        flex-grow: 4;
         border: 4px solid #ffffff;
         border-radius: 100%;
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
+    }
+    .third-container .img {
+        display: flex;
+        flex-flow: column;
+        margin: 20px;
+    }
+    .third-container .img h3{ 
+        display: block;
     }
 
     .third-container h3{
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
+        display: none;
     }
 
     .third-container p {
-        grid-row: 1 / span 4;
-        grid-column: 1 / span 4;
+        margin: 20px;
     }
 
     .fourth-container {
@@ -880,16 +885,35 @@ footer {
         margin: auto;
     }
 
-    /* Now it's okay to reveal these images */
-    .content-box img {
-        display: inline-block;
-        width: 100%;
+    .center-container {
+        display: flex;
+        flex-flow: row;
+        width: 80%;
+        margin: auto;
     }
 
-    /* .content-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } */
+    .center-container-reverse {
+         display: flex;
+         flex-flow: row-reverse;
+         width: 80%;
+         margin: auto;
+     }
+
+     .break-picture {
+        background-image: url(images/bar_218x375.jpg);
+    }
+
+    .bowling-picture {
+        background-image: url(images/bowling_218x375.jpg);
+    }
+
+    .fitness-picture {
+        background-image: url(images/fitness_218x375.jpg);
+    }
+
+    .climbing-picture {
+        background-image: url(images/climbing_218x375.jpg);
+    }
 
     .info {
         height: 75px;
@@ -899,15 +923,44 @@ footer {
 
 /** DESKTOP VIEWPORT **/
 @media (min-width: 1024px) {
+    .center-container {
+        margin: 0 auto;
+        max-width: 1641px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .center-container-reverse {
+        margin: 0 auto;
+        max-width: 1641px;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
     /* HOME PAGE*/
+    .first-content p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
     .discover-image {
-        width: 40%;
+        width: 100%;
     }
 
     .athletic-icons {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 40%;
+        padding: 0px 30px;
+    }
+
+    .athletic-icons p {
+        font-size: 1rem;
+        color: #26A682;
     }
 
     .scroll-down img {
@@ -919,33 +972,44 @@ footer {
     .scroll-down p {
         font-size: 1rem;
     }
-
-    .second-content img {
-        width: 25%;
+    .second-container{
+        display: flex;
+    }
+    .picture {
+        width: 50%;
+        max-width: 813px;
+        height: 220px;
     }
 
+    .second-pic{
+        background-image: url(images/school_813x337.jpg);
+    }
+
+    .fourth-pic{
+        background-image: url(images/entertainment_813x337.jpg);
+    }
+    .discover-content {
+        width: 45%;
+    }
+    .discover-container .button {
+        margin: 10px 0 10px auto;
+    }
     .third-container {
         width: 100%;
         margin: auto;
         background-color: #3c3b3a;
         color: #ffffff;
-        padding: 50px;
-        display: grid;
-        grid-template-rows: 1fr 1fr 2fr;
+        display: flex;
+        flex-direction: row;
     } 
-
-    .third-container img {
-        width: 8%;
-        border-radius: 70px;
+    .third-container .img h3 { display: none; width: 20% }
+    .third-container h3 { display: block;}
+    .third-container   .third-content {
+        flex-grow: 1;
     }
-
     .info {
         height: 100px;
     }
-
-    .fourth-content img {
-        width: 25%;
-    } 
 
     div .button {
         background-color: #26A682;
@@ -976,6 +1040,28 @@ footer {
         font-size: 1rem;
         line-height: 1.7rem;
         padding: 10px;
+    }
+
+    .construction-image {
+        width: 170%;
+        margin: auto;
+        padding: 30px 20px 10px 0px; /* top right bottom left */
+    }
+
+    .break-picture {
+        background-image: url(images/bar_813x337.jpg);
+    }
+
+    .bowling-picture {
+        background-image: url(images/bowling_813x337.jpg);
+    }
+
+    .fitness-picture {
+        background-image: url(images/fitness_813x337.jpg);
+    }
+
+    .climbing-picture {
+        background-image: url(images/climbing_813x337.jpg);
     }
 
     .sponsors-content h1 {
@@ -1012,7 +1098,12 @@ footer {
         display: grid;
     }
     .contact-image {
-        width: 30%;
+        width: 60%;
+    }
+
+    .form {
+        width: 100%;
+        margin-left: 20px;
     }
 
     .location-container {

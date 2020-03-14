@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <!-- Link to the font Raleway -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-   <!-- Link to add the favicon to the HTML page -->
-   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Link to add the favicon to the HTML page -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Midterm Project - ARC</title>
 </head>
+
 <body>
     <header>
         <div class="header-wrapper">
             <div class="arc-logo">
-                <img src="images/logo.svg" alt="ARC logo"/>
+                <img src="images/logo.svg" alt="ARC logo" />
             </div>
             <div class="nav-wrapper">
-                <nav> 
+                <nav>
                     <ul>
                         <li><a class="active-page" href="#">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -31,87 +33,91 @@
     </header>
     <section class="content-wrapper">
         <div class="first-container">
-            <div class="first-content">
-                <h1>Discover Your ARC.</h1>
-                <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
+            <div class="center-container">
+                <div class="right-first-container">
+                    <div class="first-content">
+                        <h1>Discover Your ARC.</h1>
+                        <p>With Algonquin College's newest facility, there's always something for everyone to discover
+                            and enjoy!</p>
+                        <div class="athletic-icons">
+                            <div class="bowling-icon">
+                                <img src="icons/bowling.svg" alt="Bowling icon" />
+                                <p>Bowling</p>
+                            </div>
+                            <div class="climbing-icon">
+                                <img src="icons/rock-climbing.svg" alt="Rock climbing icon" />
+                                <p>Rock Climbing</p>
+                            </div>
+                            <div class="fitness-icon">
+                                <img src="icons/fitness.svg" alt="Fitness centre icon" />
+                                <p>Fitness Center</p>
+                            </div>
+                            <div class="court-icon">
+                                <img src="icons/basketball.svg" alt="Indoor court icon" />
+                                <p>Indoor Court</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="https://www.algonquincollege.com">
+                                <h2>Get Started</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="discover-image" src="images/discover.svg" alt="Vector image of girl reading books" />
             </div>
-            <div class="athletic-icons">
-                <div class="bowling-icon">
-                    <img src="icons/bowling.svg" alt="Bowling icon" />
-                    <p>Bowling</p>
-                </div>
-                <div class="climbing-icon">
-                    <img src="icons/rock-climbing.svg" alt="Rock climbing icon" />
-                    <p>Rock Climbing</p>
-                </div>
-                <div class="fitness-icon">
-                    <img src="icons/fitness.svg" alt="Fitness centre icon" />
-                    <p>Fitness Center</p>
-                </div>
-                <div class="court-icon">
-                    <img src="icons/basketball.svg" alt="Indoor court icon" />
-                    <p>Indoor Court</p>
-                </div>
-            </div>
-            <div class="button">
-                <a href="#">
-                    <h2>Get Started</h2>
-                </a>
-            </div>
-            <img class="discover-image" src="images/discover.svg" alt="Vector image of girl reading books" />
             <div class="scroll-down">
                 <p>Scroll</p>
                 <img src="icons/arrow.svg" />
             </div>
         </div>
         <div class="second-container">
-            <picture>
-                <!-- The lines of coding below will target small screens -->
-                <source srcset="images/school_375x200.jpg 315w" media="(max-width: 768px)">
-                <!-- The lines of coding below will target large screens -->
-                <source srcset="images/school_768x200.jpg 768w,
-                images/school_813x337.jpg 813w" media="(min-width: 768px)">
-                <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
-                <img src="images/school.jpg" alt="Photo of students outdoors">
-            </picture>
-            <div class="second-content">
-                <h1>Discover.</h1>
-                <h2>Algonquin College</h2>
-                <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
-                <div class="button">
-                    <a href="#">
-                        <h2>Learn More</h2>
-                    </a>
+            <div class="center-container">
+                <div class="picture second-pic"></div>
+                <div class="discover-content">
+                    <h1>Discover.</h1>
+                    <h2>Algonquin College</h2>
+                    <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa,
+                        Ontario, Canada. The college serves the National Capital Region and the outlying areas of
+                        Eastern Ontario, Western Quebec, and Upstate New York.</p>
+                    <div class="button">
+                        <a href="https://www.algonquincollege.com">
+                            <h2>Learn More</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="third-container">
-                <img src="images/simon.jpg" alt="Photo of the SA President Dijanelle Simon"/>
-            <div class="third-content">
+            <div class="center-container">
+                <div class="img">
+                    <img src="images/simon.jpg" alt="Photo of the SA President Dijanelle Simon" />
+                    <h3>Dijanelle Simon </br> SA President</h3>
+                </div>
                 <h3>Dijanelle Simon </br> SA President</h3>
-                <!-- </br> is a line breaker tag to split the text in two lines -->
-                <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."
+                <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a
+                    greater number of students to participate in physical and social activity. The Students' Association
+                    is committed to and focused on programming that results in our students taking person ownership for
+                    their health."
                 </p>
             </div>
         </div>
         <div class="fourth-container">
-            <picture>
-                <!-- The lines of coding below will target small screens -->
-                <source srcset="images/entertainment_375x200.jpg 315w" media="(max-width: 768px)">
-                <!-- The lines of coding below will target large screens -->
-                <source srcset="images/entertainment_768x200.jpg 768w,
-                images/entertainment_813x337.jpg 813w" media="(min-width: 768px)">
-                <!-- The image bellow is a fallback image and it has to be inside the Picture tag in case the browser can't load the images above -->
-                <img src="images/entertainment.jpg" alt="Photo of young woman with a beer glass">
-            </picture>
-            <div class="fourth-content">
-                <h1>Discover.</h1>
-                <h2>The entertainment</h2>
-                <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
-                <div class="button">
-                    <a href="#">
-                        <h2>Learn More</h2>
-                    </a>
+            <div class="center-container-reverse">
+                <div class="picture fourth-pic"></div>
+                <div class="discover-content">
+                    <h1>Discover.</h1>
+                    <h2>The entertainment</h2>
+                    <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a
+                        variety of events. Now with the coming of the ARC facility, not only will it be providing more
+                        space for the students to study, but it will also be bringing in more room for late-night
+                        entertainment.</p>
+                    <div class="button">
+                        <a href="https://www.algonquincollege.com">
+                            <h2>Learn More</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,26 +134,27 @@
             <div class="social-media">
                 <div>
                     <a>
-                        <img src="icons/facebook.svg" alt="Facebook icon"/>
+                        <img src="icons/facebook.svg" alt="Facebook icon" />
                     </a>
                 </div>
                 <div>
                     <a>
-                        <img src="icons/instagram.svg" alt="Instagram icon"/>
-                    </a>
-                    </div>
-                <div>
-                    <a>
-                        <img src="icons/twitter.svg" alt="Twitter icon"/>
+                        <img src="icons/instagram.svg" alt="Instagram icon" />
                     </a>
                 </div>
                 <div>
                     <a>
-                        <img src="icons/youtube.svg" alt="Youtube icon"/>
+                        <img src="icons/twitter.svg" alt="Twitter icon" />
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <img src="icons/youtube.svg" alt="Youtube icon" />
                     </a>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
