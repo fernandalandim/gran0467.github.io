@@ -2,6 +2,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     background-color: #F2F2F2;
     color: #847F8C;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,6 +30,11 @@ div nav ul li a {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+}
+
+section {
+    width: 80%;
+    margin: auto;
 }
 
 footer {
@@ -79,3 +85,25 @@ button {
     font-size: 1rem;
     font-weight: 500;
 }
+
+/*** CONTENT ***/
+
+.content {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.content-design,
+.content-web,
+.content-photo {
+    width: 80%;
+    margin: auto;
+}
+
+.content-design img {
+    width: 40%;
+    height: auto;
+}
+
+/*** ABOUT ***/
