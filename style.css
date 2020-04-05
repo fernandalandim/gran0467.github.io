@@ -10,70 +10,168 @@ body {
     margin: auto;
 }
 
+section {
+    width: 80%;
+    margin: auto;
+}
+
 header,
 footer,
 button {
     background-color: #9D80CC;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/**** MOBILE FIRST ****/
+
+.nav-menu {
+    display: none;
+    /* This will hide the nav meny in the mobile viewport */
 }
 
-div nav ul {
-    display:inline-block;
-    list-style: none;
+.masterhead-banner {
+    display: none;
+    /* This will hide the banners in the mobile viewport */
 }
 
-div nav ul li a {
-    color: #ffffff;
+.logo img {
+    width: 171px;
+    height: 45px;
+    padding: 10px 0px 10px 40px;
+    margin: auto;
+}
+
+/* Menu for mobile viewport */
+.mobile-menu #myLinks {
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.mobile-menu a {
+    color: white;
     text-decoration: none;
-    cursor: pointer;
+    font-size: 1rem;
+    display: block;
 }
 
-section {
-    width: 80%;
-    margin: auto;
+#myLinks a {
+    text-align: center;
+    border-bottom: 1px solid #E3E3E3;
 }
 
-footer {
+.mobile-menu a.icon {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.icon img {
+    width: 27px;
+    height: 27px;
     color: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-/*** Cards ***/
+.mobile-menu a:hover {
+    background-color: #F1E8FF;
+    color: #847F8C;
+}
 
+/* Class of Active to show the User in which page he/she is */
+.active {
+    font-weight: bolder;
+}
+
+/*** Section ***/
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+section h2,
+section p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+/** Cards **/
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+.cards img {
+    width: 80px;
+    height: 80px;
+}
+
 .card-design,
 .card-web,
 .card-photo {
     background-color: #F1E8FF;
-    width: 418px;
-    height: 689px;
-}
-.card-design img {
-    width: 234px;
-    height: 234px;
+    width: 345px;
+    height: 100px;
+    margin-bottom: 46px;
 }
 
-.card-web img {
-    width: 215px;
-    height: 215px;
+.cards ul {
+    display: none;
+    /* This will hide the description on each card in the mobile viewport */
 }
 
-.card-photo img {
-    width: 209px;
-    height: 209px;
+/* This text will appear only in the mobile viewport */
+.text4mobile {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
 }
 
-/*** Buttons ***/
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: #9D80CC;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+/*** Footer ***/
+
+footer {
+    color: #ffffff;
+    width: 100%;
+    margin: auto;
+    font-size: .8rem;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-media,
+.nav-footer {
+    display: none;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/** Buttons **/
 
 button {
     color: #ffffff;
@@ -86,7 +184,7 @@ button {
     font-weight: 500;
 }
 
-/*** CONTENT ***/
+/**** CONTENT PAGE ****/
 
 .content {
     width: 100%;
@@ -106,4 +204,128 @@ button {
     height: auto;
 }
 
-/*** ABOUT ***/
+/**** ABOUT PAGE ****/
+
+/*** Media Queries ***/
+
+/** TABLET - FIRST BREAKPOINT**/
+@media (min-width: 800px) {
+    .mobile-menu #myLinks .icon {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline;
+    }
+
+    .icon img {
+        display: none; /* This will hide the Bars icon */
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    div nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: auto;
+    }
+
+    .card-design,
+    .card-web,
+    .card-photo {
+        background-color: #F1E8FF;
+        width: 418px;
+        height: 689px;
+    }
+
+    .card-design img {
+        width: 234px;
+        height: 234px;
+    }
+
+    .card-web img {
+        width: 215px;
+        height: 215px;
+    }
+
+    .card-photo img {
+        width: 209px;
+        height: 209px;
+    }
+
+}
+
+/** DESKTOP - SECOND BREAKPOINT **/
+@media (min-width: 800px) {
+    .mobile-menu #myLinks .icon {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    div nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: auto;
+    }
+
+    .card-design,
+    .card-web,
+    .card-photo {
+        background-color: #F1E8FF;
+        width: 418px;
+        height: 689px;
+    }
+
+    .card-design img {
+        width: 234px;
+        height: 234px;
+    }
+
+    .card-web img {
+        width: 215px;
+        height: 215px;
+    }
+
+    .card-photo img {
+        width: 209px;
+        height: 209px;
+    }
+
+}

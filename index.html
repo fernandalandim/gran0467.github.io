@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>LandInc - web portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img src="images/landinc-logo.png" alt="LandInc logo">
         </div>
+        <!-- Regular menu -->
         <div class="nav-menu">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="content.html">Content</a></li>
-                </ul>
-                <ul>
-                    <li> <a href="about.html">About</a></li>
-                </ul>
-                <ul>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <!-- Hamburger menu -->
+        <div class="mobile-menu">
+            <div id="myLinks">
+                <a class="active" href="index.html">Home</a>
+                <a href="content.html">Content</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- Hamburger menu icon -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/bars-solid.svg" alt="Burger menu icon">
+            </a>
+        </div>
     </header>
-    
+
     <div class="masterhead-banner">
         <div class="banner01">
             <img src="images/banner01.jpg" alt="Photo of skater girl">
@@ -45,51 +57,57 @@
 
     <section>
         <h1>Hello, my name is Fernanda.</h1>
-        <h2>I am a multimedia professional</h2>
-        <p>I work with Design, Web Development and Photography</p>
+        <h2>I am a multimedia professional.</h2>
+        <p>I work with Design, Web Development and Photography.</p>
         <div class="cards">
             <div class="card-design">
                 <div class="card-image">
                     <img src="images/art.svg" alt="Image of a computer screen with a graphic design tool">
                 </div>
+                <!-- This text will be displayed only in the mobile viewport -->
+                <p class="text4mobile">Kickstart your project with a beautiful layout</p>
                 <ul>
                     <li>Kickstart your project with a beautiful layout</li>
                     <li>Adjustable design for mobile, tablet and desktop</li>
                     <li>Brand new identity to your business</li>
                 </ul>
-                <button>Design</button>
+                <div class="btn"><a href="content/design.html">DESIGN</a></div>
             </div>
             <div class="card-web">
                 <div class="card-image">
                     <img src="images/data.svg" alt="Image of a computer screen with brackets and conding lines">
                 </div>
+                <!-- This text will be displayed only in the mobile viewport -->
+                <p class="text4mobile">Showcase your business in the best way possible</p>
                 <ul>
                     <li>Responsive web site that fits different devices</li>
                     <li>Showcase your business in the best way possible</li>
                     <li>Keep it simple to your user</li>
                 </ul>
-                <button>Web Development</button>
+                <div class="btn"><a href="content/web.html">WEB DEVELOPMENT</a></div>
             </div>
             <div class="card-photo">
                 <div class="card-image">
                     <img src="images/camera.svg" alt="Image of a camera">
                 </div>
+                <!-- This text will be displayed only in the mobile viewport -->
+                <p class="text4mobile">Capture the most important moments of your event</p>
                 <ul>
                     <li>Capture the most important moments of your event</li>
                     <li>Every image tells its own story</li>
                     <li>Explore the possibilities indoors and outdoors</li>
                 </ul>
-                <button>Photography</button>
+                <div class="btn"><a href="content/photo.html">PHOTOGRAPHY</a></div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="contact-footer">
-            <p>+1 (343) 202-3645</p>
-            <p>fernanda@landinc.com</p>
-        </div>
-        <div class="social-footer">
+        <div class="footer-container">
+            <div class="contact-footer">
+                <p>+1 (343) 202-3645</p>
+                <p>fernanda@landinc.com</p>
+            </div>
             <div class="social-media">
                 <a><img src="images/instagram.svg"></a>
                 <a><img src="images/twitter.svg"></a>
@@ -98,26 +116,38 @@
             <div class="copyright">
                 <p>LandInc &copy 2020</p>
             </div>
-        </div>
-        <div class="nav-footer">
-            <div class="nav-menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="content.html">Content</a></li>
-                    </ul>
-                    <ul>
-                        <li> <a href="about.html">About</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="nav-footer">
+                <div class="nav-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="content.html">Content</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="about.html">About</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
+
 </html>
