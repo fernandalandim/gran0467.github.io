@@ -57,6 +57,7 @@ button {
 #myLinks a {
     text-align: center;
     border-bottom: 1px solid #E3E3E3;
+    padding: 15px;
 }
 
 .mobile-menu a.icon {
@@ -71,11 +72,8 @@ button {
     height: 27px;
     color: #ffffff;
 }
+/* There's no :hover in this menu because it's a mobile version */
 
-.mobile-menu a:hover {
-    background-color: #F1E8FF;
-    color: #847F8C;
-}
 
 /* Class of Active to show the User in which page he/she is */
 .active {

@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>LandInc - web portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img src="images/landinc-logo.png" alt="LandInc logo">
         </div>
+        <!-- Regular menu -->
         <div class="nav-menu">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                </ul>
-                <ul>
                     <li><a href="content.html">Content</a></li>
-                </ul>
-                <ul>
-                    <li> <a href="about.html">About</a></li>
-                </ul>
-                <ul>
+                    <li><a class="active" href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <!-- Hamburger menu -->
+        <div class="mobile-menu">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="content.html">Content</a>
+                <a class="active" href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- Hamburger menu icon -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/bars-solid.svg" alt="Burger menu icon">
+            </a>
+        </div>
     </header>
-    
+
     <section>
         <div class="">
             <div class="">
@@ -44,8 +56,10 @@
             <div class="">
                 <h1>Hello, my name is Fernanda.</h1>
                 <h2>I am a multimedia professional</h2>
-                <p>Born and raised in Recife, Brazil. I started my professional life after getting a Bachelor Degree in Communications.</p> 
-                <p>I have worked with Motion Design, Web Development, Social Media, Video Editing and, most recently, with Tutoring.</p>
+                <p>Born and raised in Recife, Brazil. I started my professional life after getting a Bachelor Degree in
+                    Communications.</p>
+                <p>I have worked with Motion Design, Web Development, Social Media, Video Editing and, most recently,
+                    with Tutoring.</p>
                 <p>If you are looking for a versatile, reliable and creative professional, I am your best choice!</p>
                 <p>Tools:</p>
                 <ul>
@@ -97,4 +111,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>LandInc - web portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img src="images/landinc-logo.png" alt="LandInc logo">
         </div>
+        <!-- Regular menu -->
         <div class="nav-menu">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                </ul>
-                <ul>
                     <li><a href="content.html">Content</a></li>
-                </ul>
-                <ul>
-                    <li> <a href="about.html">About</a></li>
-                </ul>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <!-- Hamburger menu -->
+        <div class="mobile-menu">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="content.html">Content</a>
+                <a href="about.html">About</a>
+                <a class="active" href="contact.html">Contact</a>
+            </div>
+            <!-- Hamburger menu icon -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/bars-solid.svg" alt="Burger menu icon">
+            </a>
+        </div>
     </header>
-    
+
     <section>
         <form>
             <fieldset>
@@ -90,4 +102,5 @@
     </footer>
 
 </body>
+
 </html>
