@@ -83,10 +83,11 @@ button {
 }
 
 /*** Section ***/
-h1 {
+section h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
+    text-align: center;
 }
 
 section h2,
@@ -94,15 +95,13 @@ section p {
     font-family: 'Open sans', sans-serif;
     font-size: 1rem;
     font-weight: normal;
+    text-align: center;
 }
-
 
 /** Cards **/
 .cards {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .cards img {
@@ -114,9 +113,14 @@ section p {
 .card-web,
 .card-photo {
     background-color: #F1E8FF;
-    width: 345px;
+    width: 100%;
     height: 100px;
     margin-bottom: 46px;
+    display: flex;
+}
+
+.cards .btn {
+    justify-content: flex-end;
 }
 
 .cards ul {
@@ -206,6 +210,8 @@ button {
 
 /**** ABOUT PAGE ****/
 
+
+
 /*** Media Queries ***/
 
 /** TABLET - FIRST BREAKPOINT**/
@@ -239,40 +245,58 @@ button {
         cursor: pointer;
     }
 
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 80%;
+    .masterhead-banner {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
         margin: auto;
     }
 
-    .card-design,
-    .card-web,
-    .card-photo {
-        background-color: #F1E8FF;
-        width: 418px;
-        height: 689px;
+    .banner01 img {
+        height: 60%;
+        width: auto;
+        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+        /* Reference: https://bennettfeely.com/clippy/ */
     }
 
-    .card-design img {
-        width: 234px;
-        height: 234px;
+    .banner02 img {
+        height: 60%;
+        width: auto;
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        /* Reference: https://bennettfeely.com/clippy/ */
     }
 
-    .card-web img {
-        width: 215px;
-        height: 215px;
+    .banner03 img {
+        height: 60%;
+        width: auto;
+        clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+        /* Reference: https://bennettfeely.com/clippy/ */
     }
 
-    .card-photo img {
-        width: 209px;
-        height: 209px;
+    section h1 {
+        font-size: 1.6rem;
+    }
+
+    section h2,
+    section p {
+        font-size: 1.3rem;
+    }
+
+    .cards ul {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .text4mobile {
+        display: none; /* This will hide the description on each card in the mobile viewport */
+
     }
 
 }
 
 /** DESKTOP - SECOND BREAKPOINT **/
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .mobile-menu #myLinks .icon {
         display: none;
     }
@@ -298,34 +322,45 @@ button {
         cursor: pointer;
     }
 
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2,
+    section p {
+        font-size: 2rem;
+    }
+
     .cards {
+        width: 100%;
+        margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 80%;
-        margin: auto;
     }
 
     .card-design,
     .card-web,
     .card-photo {
         background-color: #F1E8FF;
-        width: 418px;
-        height: 689px;
+        width: 300px;
+        height: 500px;
+        margin: 0px 10px 50px 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
-    .card-design img {
-        width: 234px;
-        height: 234px;
+    .cards ul li {
+        line-height: 2.1rem;
     }
 
-    .card-web img {
-        width: 215px;
-        height: 215px;
+    .cards img {
+        width: 50%;
+        height: auto;
     }
 
-    .card-photo img {
-        width: 209px;
-        height: 209px;
+    .cards .btn {
+        width: 80%;
+        font-size: 1rem;
     }
 
 }
