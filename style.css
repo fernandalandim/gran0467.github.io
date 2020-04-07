@@ -81,15 +81,15 @@ button {
 }
 
 /*** Section ***/
-section h1 {
+section.content-home h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
 }
 
-section h2,
-section p {
+section.content-home h2,
+section.content-home p {
     font-family: 'Open sans', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -127,25 +127,10 @@ section p {
 }
 
 /* This text will appear only in the mobile viewport */
-.text4mobile {
+.cards .text4mobile {
     font-size: .8rem;
     font-weight: 600;
     letter-spacing: .05rem;
-}
-
-.btn {
-    width: 100px;
-    height: 30px;
-    background-color: #9D80CC;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: .6rem;
-    font-weight: 600;
 }
 
 /*** Footer ***/
@@ -175,15 +160,19 @@ footer {
 
 /** Buttons **/
 
-button {
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: #9D80CC;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn a {
+    text-decoration: none;
     color: #ffffff;
-    border-radius: 6px;
-    border: none;
-    width: 351px;
-    height: 49px;
-    font-family: 'open sans';
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: .6rem;
+    font-weight: 600;
 }
 
 /**** CONTENT PAGE ****/
@@ -194,6 +183,30 @@ button {
     justify-content: center;
 }
 
+section.content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+section.content h2,
+section.content p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.content-text {
+    display: none;
+    /* This will hide the description on each card in the mobile viewport */
+}
+
+/* This text will appear only in the mobile viewport */
+.content .text4mobile {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 .content-design,
 .content-web,
 .content-photo {
@@ -201,10 +214,19 @@ button {
     margin: auto;
 }
 
-.content-design img {
-    width: 40%;
-    height: auto;
+.content img {
+    width: 100%;
 }
+
+.content .btn {
+    width: 100%;
+}
+
+.content .btn {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 
 /**** ABOUT PAGE ****/
 
@@ -272,23 +294,24 @@ button {
         /* Reference: https://bennettfeely.com/clippy/ */
     }
 
-    section h1 {
+    section.content-home h1 {
         font-size: 1.6rem;
     }
 
-    section h2,
-    section p {
+    section.content-home h2,
+    section.content-home p {
         font-size: 1.3rem;
     }
 
-    .cards ul {
+    .cards ul,
+    .content-text {
         display: inline-block;
         text-align: left;
     }
     
-    .text4mobile {
+    .cards .text4mobile,
+    .content .text4mobile {
         display: none; /* This will hide the description on each card in the mobile viewport */
-
     }
 
 }
@@ -320,12 +343,12 @@ button {
         cursor: pointer;
     }
 
-    section h1 {
+    section.content-home h1 {
         font-size: 2.5rem;
     }
 
-    section h2,
-    section p {
+    section.content-home h2,
+    section.content-home p {
         font-size: 2rem;
     }
 
