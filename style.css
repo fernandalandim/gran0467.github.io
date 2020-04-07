@@ -185,7 +185,7 @@ footer {
 
 section.content h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -212,6 +212,7 @@ section.content p {
 .content-photo {
     width: 80%;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 .content img {
@@ -222,9 +223,10 @@ section.content p {
     width: 100%;
 }
 
-.content .btn {
-    font-size: 1rem;
+.content .btn a {
+    font-size: .9rem;
     font-weight: 700;
+    align-self: center;
 }
 
 
@@ -314,6 +316,18 @@ section.content p {
         display: none; /* This will hide the description on each card in the mobile viewport */
     }
 
+    .content .btn {
+        width: 20%;
+        float: right;
+    }
+    
+    .content .btn a {
+        font-size: .9rem;
+        font-weight: 700;
+        text-align: center;
+        align-self: center;
+    }
+
 }
 
 /** DESKTOP - SECOND BREAKPOINT **/
@@ -382,6 +396,25 @@ section.content p {
     .cards .btn {
         width: 80%;
         font-size: 1rem;
+    }
+
+    .content-box01,
+    .content-box02,
+    .content-box03 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+    }
+
+    .content .btn {
+        width: 50%;
+    }
+    
+    .content .btn a {
+        font-size: .9rem;
+        font-weight: 700;
+        text-align: center;
+        align-self: center;
     }
 
 }

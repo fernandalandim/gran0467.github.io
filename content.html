@@ -46,7 +46,7 @@
     <section class="content">
         <div class="content-design">
             <h1>Design</h1>
-            <div class="">
+            <div class="content-box01">
                 <picture>
                     <!-- Mobile and Tablet viewport -->
                     <source srcset="images/design_345x100.jpg 345w" media="(max-width: 800px)">
@@ -56,21 +56,14 @@
                     <img src="images/design_812x400.jpg 812w" alt="Image of a notepad with wireframe sketches">
                 </picture>
                 <!-- This text will be displayed only in the mobile viewport -->
-                <p class="text4mobile">Going beyond the basics of creating graphics and user interfaces, students focus
-                    on how interfaces must react to user expectations.</p>
-                <p class="content-text">The creation of digital art requires an understanding of the modern techniques,
-                    tools and file formats the industry uses. Modern industry-standard software is used interactively to
-                    explore design processes, methodologies and best practices. Following a holistic innovation process
-                    for an area of interest or organization, students build an initial business case and apply design
-                    thinking and creative problem-solving strategies to make innovation a sustainable practice. Going
-                    beyond the basics of creating graphics and user interfaces, students focus on how interfaces must
-                    react to user expectations.</p>
+                <p class="text4mobile">Going beyond the basics of creating graphics and user interfaces, students focus on how interfaces must react to user expectations.</p>
+                <p class="content-text">The creation of digital art requires an understanding of the modern techniques, tools and file formats the industry uses. Modern industry-standard software is used interactively to explore design processes, methodologies and best practices. Following a holistic innovation process for an area of interest or organization, students build an initial business case and apply design thinking and creative problem-solving strategies to make innovation a sustainable practice. Going beyond the basics of creating graphics and user interfaces, students focus on how interfaces must react to user expectations.</p>
                 <div class="btn"><a href="content/design.html">DESIGN</a></div>
             </div>
         </div>
         <div class="content-web">
             <h1>Web Development</h1>
-            <div class="">
+            <div class="content-box02">
                 <picture>
                     <!-- Mobile and Tablet viewport -->
                     <source srcset="images/web_345x100.jpg 345w" media="(max-width: 800px)">
@@ -90,7 +83,7 @@
         </div>
         <div class="content-photo">
             <h1>Photography</h1>
-            <div class="">
+            <div class="content-box03">
                 <picture>
                     <!-- Mobile and Tablet viewport -->
                     <source srcset="images/photo_345x100.jpg 345w" media="(max-width: 800px)">
@@ -100,13 +93,9 @@
                     <img src="images/photo_812x400.jpg 812w" alt="Image of a camera on a desk">
                 </picture>
                 <!-- This text will be displayed only in the mobile viewport -->
-                <p class="text4mobile">Ways of using photography as visual communication, story telling, and techniques that will make every click count.</p>
-                <p class="content-text">Photos in a variety of settings and environments, exploring best practices
-                    during production to minimize post-production issues. Ways of using photography as visual
-                    communication, story telling, and techniques that will make every click count. Every image tells a
-                    story and here you can rely in a professional that will make your photos spread the best message for
-                    your business. Video and audio technology and tools are introduced, building on the basic
-                    photography techniques and best practices.</p>
+                <p class="text4mobile">Ways of using photography as visual communication, story telling, and techniques
+                    that will make every click count.</p>
+                <p class="content-text">Photos in a variety of settings and environments, exploring best practices during production to minimize post-production issues. Ways of using photography as visual communication, story telling, and techniques that will make every click count. Every image tells a story and here you can rely in a professional that will make your photos spread the best message for your business. Video and audio technology and tools are introduced, building on the basic photography techniques and best practices.</p>
                 <div class="btn"><a href="content/photo.html">PHOTOGRAPHY</a></div>
             </div>
         </div>
@@ -146,7 +135,16 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

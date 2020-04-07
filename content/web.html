@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>LandInc - web portfolio</title>
 </head>
 <body>
@@ -13,21 +15,29 @@
         <div class="logo">
             <img src="../images/landinc-logo.png" alt="LandInc logo">
         </div>
+        <!-- Regular menu -->
         <div class="nav-menu">
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                </ul>
-                <ul>
-                    <li><a href="../content.html">Content</a></li>
-                </ul>
-                <ul>
-                    <li> <a href="../about.html">About</a></li>
-                </ul>
-                <ul>
+                    <li><a class="active" href="../content.html">Content</a></li>
+                    <li><a href="../about.html">About</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+        <!-- Hamburger menu -->
+        <div class="mobile-menu">
+            <div id="myLinks">
+                <a href="../index.html">Home</a>
+                <a class="active" href="../content.html">Content</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <!-- Hamburger menu icon -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="../images/bars-solid.svg" alt="Burger menu icon">
+            </a>
         </div>
     </header>
     
@@ -93,6 +103,15 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
