@@ -46,7 +46,16 @@
     <section>
         <div class="">
             <div class="">
-                <img src="images/portrait-desktop.jpg" alt="Fernanda's Portrait">
+                <picture>
+                    <!-- Mobile and Tablet viewport -->
+                    <source srcset="images/portrait-mobile.jpg 534w,
+                    images/portrait-tablet.jpg 650w" media="(max-width: 1000px)">
+                    <!-- Desktop viewport -->
+                    <source srcset="images/portrait-desktop.jpg 850w" media="(min-width: 1000px)">
+                    <!-- Fallback image -->
+                    <img src="images/portrait-desktop.jpg" alt="Fernanda's Portrait">
+                </picture>
+               
                 <div class="social-media">
                     <a><img src="images/instagram.svg"></a>
                     <a><img src="images/twitter.svg"></a>
@@ -56,10 +65,8 @@
             <div class="">
                 <h1>Hello, my name is Fernanda.</h1>
                 <h2>I am a multimedia professional</h2>
-                <p>Born and raised in Recife, Brazil. I started my professional life after getting a Bachelor Degree in
-                    Communications.</p>
-                <p>I have worked with Motion Design, Web Development, Social Media, Video Editing and, most recently,
-                    with Tutoring.</p>
+                <p>Born and raised in Recife, Brazil. I started my professional life after getting a Bachelor Degree in Communications.</p>
+                <p>I have worked with Motion Design, Web Development, Social Media, Video Editing and, most recently, with Tutoring.</p>
                 <p>If you are looking for a versatile, reliable and creative professional, I am your best choice!</p>
                 <p>Tools:</p>
                 <ul>
