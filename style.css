@@ -232,6 +232,14 @@ section.content p {
 
 /**** ABOUT PAGE ****/
 
+.about-page {
+    width: 80%;
+    margin: auto;
+}
+
+.about-portrait img {
+    height: 312px;
+}
 
 
 /*** Media Queries ***/
