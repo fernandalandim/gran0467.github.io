@@ -45,8 +45,30 @@
         <div class="webdev">
             <h1>Web Development</h1>
             <div class="webdev-images-top">
-                <img src="../images/webdev_layout_812x400.jpg" alt="Image of the ARC website layout">
-                <img src="../images/webdev_code_812x400.jpg" alt="Image of the ARC website code">
+                <div class="web-images01">
+                    <picture>
+                        <!-- Mobile viewport -->
+                        <source srcset="../images/webdev_layout_345x200.jpg 345w" media="(max-width: 800px)">
+                        <!-- Tablet viewport -->
+                        <source srcset="../images/webdev_layout_670x300.jpg 670w" media="(max-width: 1000px)">
+                        <!-- Desktop viewport -->
+                        <source srcset="../images/webdev_layout_812x400.jpg 812w" media="(min-width: 1000px)">
+                        <!-- Fallback image -->
+                        <img src="../images/webdev_layout_812x400.jpg" alt="Image of the ARC website layout">
+                    </picture>
+                </div>
+                <div class="web-images02">
+                    <picture>
+                        <!-- Mobile viewport -->
+                        <source srcset="../images/webdev_code_345x200.jpg 345w" media="(max-width: 800px)">
+                        <!-- Tablet viewport -->
+                        <source srcset="../images/webdev_code_670x300.jpg 670w" media="(max-width: 1000px)">
+                        <!-- Desktop viewport -->
+                        <source srcset="../images/webdev_code_812x400.jpg 812w" media="(min-width: 1000px)">
+                        <!-- Fallback image -->
+                        <img src="../images/webdev_code_812x400.jpg" alt="Image of the ARC website code">
+                    </picture>
+                </div>
             </div>
             <p>A site designed with Responsive Web Design adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.</p>
             <ul>
@@ -56,7 +78,18 @@
                 <li>Responsive layouts automatically adjust and adapt to any device screen size, whether it is a desktop, a laptop, a tablet, or a mobile phone.</li>
             </ul>
             <div class="webdev-images-bot">
-                <img src="../images/webdev_arc_1090x600.jpg" alt="Image of a mockup with different sizes of layouts">
+                <div class="web-images03">
+                    <picture>
+                        <!-- Mobile viewport -->
+                        <source srcset="../images/webdev_arc_345x200.jpg 345w" media="(max-width: 800px)">
+                        <!-- Tablet viewport -->
+                        <source srcset="../images/webdev_arc_670x300.jpg 670w" media="(max-width: 1000px)">
+                        <!-- Desktop viewport -->
+                        <source srcset="../images/webdev_arc_1090x600.jpg 1090w" media="(min-width: 1000px)">
+                        <!-- Fallback image -->
+                        <img src="../images/webdev_arc_1090x600.jpg" alt="Image of a mockup with different sizes of layouts">
+                    </picture>
+                </div>
                 <p>Programming Languages and Frameworks:</p>
                 <ul>
                     <li>HTML5;</li>

@@ -242,6 +242,54 @@ section.content p {
     align-self: center;
 }
 
+/*** CONTENT - INNER SECTIONS ***/
+/** DESIGN **/
+.design {
+    width: 100%;
+    margin: auto;
+}
+
+.design-images-top {
+    
+}
+
+.design-images-mid {
+    
+}
+
+.design-images-bot {
+    
+}
+
+
+/** WEB DEVELOPMENT **/
+.webdev {
+    width: 100%;
+    margin: auto;
+}
+
+.webdev-images-top {
+    
+}
+
+.webdev-images-bot {
+    
+}
+
+/** PHOTOGRAPHY **/
+.photography {
+    width: 100%;
+    margin: auto;
+}
+
+.photo-images-top {
+    
+}
+
+.photo-images-mid {
+    
+}
+
 /**** ABOUT PAGE ****/
 
 .about-page {
@@ -321,66 +369,6 @@ form {
 .submit-button:hover {
     color: #ffffff;
     background-color: #B694EE;
-}
-
-/*** CONTENT - INNER SECTIONS ***/
-/** DESIGN **/
-.design {
-    width: 100%;
-    margin: auto;
-}
-
-.design-images-top {
-    display: flex;
-    flex-direction: column;
-}
-
-.design-images-mid {
-    display: flex;
-    flex-direction: column;
-}
-
-.design-images-bot {
-    display: grid;
-    grid-template-columns: 80% 20%;
-}
-
-
-/** WEB DEVELOPMENT **/
-.webdev {
-    width: 100%;
-    margin: auto;
-}
-
-.webdev-images-top {
-    display: flex;
-    flex-direction: column;
-}
-
-.webdev-images-bot {
-    display: grid;
-    grid-template-columns: 80% 20%;
-}
-
-/** PHOTOGRAPHY **/
-.photography {
-    width: 100%;
-    margin: auto;
-}
-
-.photo-images-top {
-    display: flex;
-    flex-direction: column;
-}
-
-.photo-images-mid {
-    display: flex;
-    flex-direction: column;
-}
-
-.photo-images-bot {
-    display: grid;
-    grid-template-columns: 80% 20%;
 }
 
 /*** Media Queries ***/
@@ -483,6 +471,11 @@ form {
         grid-gap: 20px;
     }
 
+    /** CONTENT - DESIGN **/
+    /** CONTENT - WEB **/
+    /** CONTENT - PHOTO **/
+    
+
 }
 
 /** DESKTOP - SECOND BREAKPOINT **/
@@ -571,5 +564,9 @@ form {
         text-align: center;
         align-self: center;
     }
+
+    /** CONTENT - DESIGN **/
+    /** CONTENT - WEB **/
+    /** CONTENT - PHOTO **/
 
 }
