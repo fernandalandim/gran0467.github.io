@@ -52,7 +52,7 @@
                         <!-- Tablet viewport -->
                         <source srcset="../images/design_notes_210x300.jpg 210w" media="(max-width: 1000px)">
                         <!-- Desktop viewport -->
-                        <source srcset="../images/design_notes__536x400.jpg 536w" media="(min-width: 1000px)">
+                        <source srcset="../images/design_notes_536x400.jpg 536w" media="(min-width: 1000px)">
                         <!-- Fallback image -->
                         <img src="../images/design_notes_536x400.jpg 400w" alt="Image of the sticky notes in the design process">
                     </picture>
@@ -82,15 +82,17 @@
                     </picture>
                 </div>                
             </div>
-            <p>Everything is a process. The creative process is the act of making new connections between old ideas. Thus, we can say creative thinking is the task of recognizing relationships between concepts.</p>
-            <p>One way to approach creative challenges is by following the five-step process of:</p>
-            <ol>
-                <li>Gathering material;</li>
-                <li>Intensely working over the material in your mind;</li>
-                <li>Stepping away from the problem;</li>
-                <li>Allowing the idea to come back to you naturally;</li>
-                <li>Testing your idea in the real world and adjusting it based on feedback.</li>
-            </ol>
+            <div class="design-text">
+                <p>Everything is a process. The creative process is the act of making new connections between old ideas. Thus, we can say creative thinking is the task of recognizing relationships between concepts.</p>
+                <p>One way to approach creative challenges is by following the five-step process of:</p>
+                <ol>
+                    <li>Gathering material;</li>
+                    <li>Intensely working over the material in your mind;</li>
+                    <li>Stepping away from the problem;</li>
+                    <li>Allowing the idea to come back to you naturally;</li>
+                    <li>Testing your idea in the real world and adjusting it based on feedback.</li>
+                </ol>
+            </div>
             <div class="design-images-mid">
                 <div class="design-images04">
                     <picture>
@@ -130,50 +132,38 @@
                         <img src="../images/design_mockup_1090x600.jpg" alt="Image of a mockup with different sizes of layouts">
                     </picture>
                 </div>
-                
-                <p>Softwares:</p>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe XD</li>
-                </ul>
+                <div class="design-text">
+                    <p><strong>Softwares:</strong></p>
+                    <div class="design-list">
+                        <p>Adobe Photoshop</p>
+                        <p>Adobe Illustrator</p>
+                        <p>Adobe XD</p>
+                    </div>
+                    <!-- This list will be visible only in the Desktop viewport -->
+                    <ul class="design-list-desktopvh">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe XD</li>
+                    </ul>
+                </div>
             </div>
         </div>
         
     </section>
 
     <footer>
-        <div class="contact-footer">
-            <p>+1 (343) 202-3645</p>
-            <p>fernanda@landinc.com</p>
-        </div>
-        <div class="social-footer">
-            <div class="social-media">
-                <a><img src="../images/instagram.svg"></a>
-                <a><img src="../images/twitter.svg"></a>
-                <a><img src="../images/facebook.svg"></a>
+        <div class="footer-container ">
+            <div class="contact-footer">
+                <div class="contact-phone">
+                    <p>+1 (343) 202-3645</p>
+                </div>
+                <div class="contact-email">
+                    <p>fernanda@landinc.com</p>
+                </div>
             </div>
-            <div class="copyright">
-                <p>LandInc &copy 2020</p>
-            </div>
-        </div>
-        <div class="nav-footer">
-            <div class="nav-menu">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="../content.html">Content</a></li>
-                    </ul>
-                    <ul>
-                        <li> <a href="../about.html">About</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+        </div> 
+        <div class="copyright">
+            <p>LandInc &copy 2020</p>
         </div>
     </footer>
     <script>

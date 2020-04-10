@@ -21,6 +21,10 @@ button {
     background-color: #9D80CC;
 }
 
+footer {
+    height: 100px;
+}
+
 /**** MOBILE FIRST ****/
 
 .nav-menu {
@@ -150,17 +154,17 @@ footer {
 .footer-container {
     width: 80%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.social-media,
-.nav-footer {
-    display: none;
+.contact-footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
 }
 
 .copyright {
     text-align: center;
+    font-weight: 700;
 }
 
 /** Buttons **/
@@ -249,18 +253,33 @@ section.content p {
     margin: auto;
 }
 
-.design-images-top {
-    
+.design h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
-.design-images-mid {
-    
+.design-text p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
-.design-images-bot {
-    
+.design-images-top img,
+.design-images-mid img,
+.design-images-bot img {
+    width: 100%;
+    margin: 5px auto;
 }
 
+.design-text {
+    width: 100%;
+    margin: auto;
+}
+
+.design-list-desktopvh {
+    display: none;
+}
 
 /** WEB DEVELOPMENT **/
 .webdev {
@@ -268,12 +287,36 @@ section.content p {
     margin: auto;
 }
 
-.webdev-images-top {
-    
+.webdev h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
-.webdev-images-bot {
-    
+.webdev-text p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.webdev-text {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.webdev-text ul {
+    margin-left: -20px;
+}
+
+.webdev-images-top img,
+.webdev-images-mid img,
+.webdev-images-bot img {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.webdev-list-desktopvh {
+    display: none;
 }
 
 /** PHOTOGRAPHY **/
@@ -282,12 +325,36 @@ section.content p {
     margin: auto;
 }
 
-.photo-images-top {
-    
+.photo h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
-.photo-images-mid {
-    
+.photo-text p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.photo-images-top img,
+.photo-images-mid img,
+.photo-images-bot img {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.photo-text {
+    width: 100%;
+    margin: auto;
+}
+
+.photo-text ul {
+    margin-left: -20px;
+}
+
+.photo-list-desktopvh {
+    display: none;
 }
 
 /**** ABOUT PAGE ****/
@@ -472,10 +539,116 @@ form {
     }
 
     /** CONTENT - DESIGN **/
-    /** CONTENT - WEB **/
-    /** CONTENT - PHOTO **/
+    .design {
+        width: 100%;
+        margin: auto;
+    }
     
+    .design h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .design-text p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+    
+    .design-images-top img,
+    .design-images-mid img,
+    .design-images-bot img {
+        width: 100%;
+        margin: 5px auto;
+    }
 
+    .design-images-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .design-images-mid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .design-text {
+        width: 100%;
+        margin: auto;
+    }
+
+    .design-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .design-list p {
+        font-size: 1rem;
+    }
+
+    /** CONTENT - WEB **/
+    .webdev h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .webdev-text p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+
+    /** CONTENT - PHOTO **/
+    .photo h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .photo-text p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+
+    .photo-images-top {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 15px;
+    }
+
+    .photo-images-mid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 15px;
+    }
+
+    .photo-images-bot {
+        width: 100%;
+        margin: auto;
+    }
+
+    .photo-images-top .photo-images02 {
+        display: inline-block;
+    }
+
+    .photo-list {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    .photo-list p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+ 
 }
 
 /** DESKTOP - SECOND BREAKPOINT **/
@@ -566,7 +739,90 @@ form {
     }
 
     /** CONTENT - DESIGN **/
-    /** CONTENT - WEB **/
-    /** CONTENT - PHOTO **/
+    .design h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    
+    .design-text p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
 
+    .design-images-bot {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-gap: 10px;
+        align-content: flex-start;
+    }
+
+    .design-list {
+        display: none;
+    }
+
+    .design-list-desktopvh {
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+
+    /** CONTENT - WEB **/
+    .webdev h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    
+    .webdev-text p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+
+    .webdev-images-bot {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-gap: 10px;
+        align-content: flex-start;
+    }
+
+    .webdev-list {
+        display: none;
+    }
+
+    .webdev-list-desktopvh {
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+
+    /** CONTENT - PHOTO **/
+    .photo-images-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .photo-images-bot {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+    }
+
+    .photo-images06 {
+        width: 300vh;
+    }
+
+    .photo-list {
+        display: none;
+    }
+
+    .photo-list-desktopvh {
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        height: 130px;
+    }
 }

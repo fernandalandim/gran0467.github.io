@@ -120,12 +120,19 @@
                         <!-- Desktop viewport -->
                         <source srcset="../images/photo_hockeywide_1090x600.jpg 1090w" media="(min-width: 1000px)">
                         <!-- Fallback image -->
-                        <img src="../images/photo_hockeywide_1090x600" alt="Image of a hockey game at TD Place">
+                        <img src="../images/photo_hockeywide_1090x600.jpg" alt="Image of a hockey game at TD Place">
                     </picture>
                 </div>
                 <div class="photo-text">
-                    <p>Photography gear and Softwares:</p>
-                    <ul>
+                    <p><strong>Photography gear and Softwares:</strong></p>
+                    <div class="photo-list">
+                        <p>Canon T5 with lenses: 18-55mm, 75-300mm</p>
+                        <p>Adobe Lightroom Classic</p>
+                        <p>Adobe Photoshop</p>
+                        <p>Adobe Premiere Pro</p>
+                    </div>
+                    <!-- This list will be visible only in the Desktop viewport -->
+                    <ul class="photo-list-desktopvh">
                         <li>Canon T5 with lenses: 18-55mm, 75-300mm</li>
                         <li>Adobe Lightroom Classic</li>
                         <li>Adobe Photoshop</li>
@@ -138,37 +145,18 @@
     </section>
 
     <footer>
-        <div class="contact-footer">
-            <p>+1 (343) 202-3645</p>
-            <p>fernanda@landinc.com</p>
-        </div>
-        <div class="social-footer">
-            <div class="social-media">
-                <a><img src="../images/instagram.svg"></a>
-                <a><img src="../images/twitter.svg"></a>
-                <a><img src="../images/facebook.svg"></a>
+        <div class="footer-container ">
+            <div class="contact-footer">
+                <div class="contact-phone">
+                    <p>+1 (343) 202-3645</p>
+                </div>
+                <div class="contact-email">
+                    <p>fernanda@landinc.com</p>
+                </div>
             </div>
-            <div class="copyright">
-                <p>LandInc &copy 2020</p>
-            </div>
-        </div>
-        <div class="nav-footer">
-            <div class="nav-menu">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="../content.html">Content</a></li>
-                    </ul>
-                    <ul>
-                        <li> <a href="../about.html">About</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+        </div> 
+        <div class="copyright">
+            <p>LandInc &copy 2020</p>
         </div>
     </footer>
     <script>
