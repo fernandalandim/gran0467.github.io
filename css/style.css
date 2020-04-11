@@ -21,10 +21,6 @@ button {
     background-color: #9D80CC;
 }
 
-footer {
-    height: 100px;
-}
-
 /**** MOBILE FIRST ****/
 
 .nav-menu {
@@ -149,6 +145,7 @@ footer {
     width: 100%;
     margin: auto;
     font-size: .8rem;
+    height: 100px;
 }
 
 .footer-container {
@@ -200,14 +197,14 @@ footer {
     justify-content: center;
 }
 
-section.content h1 {
+.content h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
 }
 
-section.content h2,
-section.content p {
+.content h2,
+.content p {
     font-family: 'Open sans', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -215,7 +212,6 @@ section.content p {
 
 .content-text {
     display: none;
-    /* This will hide the description on each card in the mobile viewport */
 }
 
 /* This text will appear only in the mobile viewport */
@@ -364,8 +360,45 @@ section.content p {
     margin: auto;
 }
 
+.about-page h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.about-page h2,
+.about-page p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.about-portrait {
+    width: 100%;
+    height: 315px;
+    margin:auto;
+    overflow: hidden;
+}
+
 .about-portrait img {
-    height: 312px;
+    width: 100%;
+    height: auto;
+}
+
+.about-bio {
+    margin-bottom: 20px;
+}
+
+.about-text {
+    display: none;
+}
+
+.about-bio ul {
+    margin-left: -20px;
+}
+
+.container-tablet {
+    display: none;
 }
 
 /**** CONTACT PAGE ****/
@@ -500,12 +533,12 @@ form {
         /* Reference: https://bennettfeely.com/clippy/ */
     }
 
-    section.content-home h1 {
+    .content-home h1 {
         font-size: 1.6rem;
     }
 
-    section.content-home h2,
-    section.content-home p {
+    .content-home h2,
+    .content-home p {
         font-size: 1.3rem;
     }
 
@@ -518,11 +551,6 @@ form {
     .cards .text4mobile,
     .content .text4mobile {
         display: none; /* This will hide the description on each card in the mobile viewport */
-    }
-
-    .content .btn {
-        width: 20%;
-        float: right;
     }
     
     .content .btn a {
@@ -651,8 +679,28 @@ form {
         font-size: 1rem;
     }
 
+    /** ABOUT **/
+    .container-tablet {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 15px;
+        margin-bottom: -20px;
+    }
+
+    .container-mobile {
+        display: none;
+    }
+
+    .tools-list ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
     footer {
         font-size: 1rem;
+        height: 120px;
     }
  
 }
@@ -684,12 +732,12 @@ form {
         cursor: pointer;
     }
 
-    section.content-home h1 {
+    .content-home h1 {
         font-size: 2.5rem;
     }
 
-    section.content-home h2,
-    section.content-home p {
+    .content-home h2,
+    .content-home p {
         font-size: 2rem;
     }
 
@@ -827,6 +875,25 @@ form {
     .photo-list-desktopvh {
         display: inline-block;
         font-size: 1.2rem;
+    }
+
+    /** ABOUT **/
+    .about-page h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    
+    .about-page h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    .about-page p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
     }
 
     footer {
