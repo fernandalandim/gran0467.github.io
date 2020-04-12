@@ -36,8 +36,8 @@ button {
 .logo img {
     width: 171px;
     height: 45px;
-    padding: 10px 0px 10px 40px;
     margin: auto;
+    padding: 10px 20px;
 }
 
 /* Menu for mobile viewport */
@@ -85,15 +85,15 @@ button {
 }
 
 /*** Section ***/
-section.content-home h1 {
+.content-home h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
 }
 
-section.content-home h2,
-section.content-home p {
+.content-home h2,
+.content-home p {
     font-family: 'Open sans', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -119,16 +119,12 @@ section.content-home p {
     height: 100px;
     margin-bottom: 46px;
     display: flex;
+    flex-direction: row;
 }
 
-.cards .btn {
-    justify-content: flex-end;
-}
-
-
+/* This will hide the description on each card in the mobile viewport */
 .cards ul {
     display: none;
-    /* This will hide the description on each card in the mobile viewport */
 }
 
 /* This text will appear only in the mobile viewport */
@@ -136,32 +132,34 @@ section.content-home p {
     font-size: .8rem;
     font-weight: 600;
     letter-spacing: .05rem;
+    width: 90%;
 }
 
-/*** Footer ***/
-
-footer {
-    color: #ffffff;
-    width: 100%;
-    margin: auto;
-    font-size: .8rem;
-    height: 100px;
-}
-
-.footer-container {
+/* These classes will be a part of Flex */
+.btn4mobile {
     width: 80%;
-    margin: auto;
+    height: 30px;
+    background-color: #9D80CC;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.contact-footer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
+.btn4mobile a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .6rem;
+    font-weight: 600;
 }
 
-.copyright {
-    text-align: center;
-    font-weight: 700;
+.card4flex {
+    width: 80%;
+}
+
+.card-design .btn,
+.card-web .btn,
+.card-photo .btn {
+    display: none;
 }
 
 /** Buttons **/
@@ -401,6 +399,10 @@ footer {
     display: none;
 }
 
+.tools-list {
+    display: none;
+}
+
 /**** CONTACT PAGE ****/
 
 form {
@@ -456,6 +458,7 @@ form {
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 /* The following lines will be responsible to add the hover effect to the button */
@@ -471,6 +474,32 @@ form {
     background-color: #B694EE;
 }
 
+/*** Footer ***/
+
+footer {
+    color: #ffffff;
+    width: 100%;
+    margin: auto;
+    font-size: .8rem;
+    height: 100px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 700;
+}
+
 /*** Media Queries ***/
 
 /** TABLET - FIRST BREAKPOINT**/
@@ -479,29 +508,46 @@ form {
         display: none;
     }
 
-    .nav-menu {
-        display: inline;
-    }
-
     .icon img {
         display: none; /* This will hide the Bars icon */
     }
 
-    header {
+    .nav-container{
+        width: 80%;
+        margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    div nav ul {
+    .logo img {
+        padding-top: 15px;
+        padding-left: 0px;
+    }
+
+    .nav-menu {
+        display: inline;
+        margin: -15px;
+    }
+
+    .nav-menu ul {
         display: flex;
         justify-content: space-around;
         list-style: none;
     }
 
-    div nav ul li a {
+    .nav-menu ul li a {
         color: #ffffff;
         text-decoration: none;
         cursor: pointer;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu a:active,
+    .nav-menu a:hover {
+        color: #ffffff;
+        background-color: #B694EE;
     }
 
     .masterhead-banner {
@@ -558,12 +604,6 @@ form {
         font-weight: 700;
         text-align: center;
         align-self: center;
-    }
-
-    form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
     }
 
     /** CONTENT - DESIGN **/
@@ -691,11 +731,27 @@ form {
     .container-mobile {
         display: none;
     }
+    .tools-list {
+        display: grid;
+        margin-bottom: 20px;
+    }
 
     .tools-list ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+    }
+
+    /** CONTACT **/
+    .columns2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .form-dropdown {
+        width: 100%;
+        margin: auto;
     }
 
     footer {
@@ -707,30 +763,6 @@ form {
 
 /** DESKTOP - SECOND BREAKPOINT **/
 @media (min-width: 1000px) {
-    .mobile-menu #myLinks .icon {
-        display: none;
-    }
-
-    .nav-menu {
-        display: inline;
-    }
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    div nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-    }
-
-    div nav ul li a {
-        color: #ffffff;
-        text-decoration: none;
-        cursor: pointer;
-    }
 
     .content-home h1 {
         font-size: 2.5rem;
@@ -894,6 +926,11 @@ form {
         font-family: 'Open sans', sans-serif;
         font-size: 1.2rem;
         font-weight: normal;
+    }
+
+    /** CONTACT **/
+    .submit-button {
+        width: 25%;
     }
 
     footer {

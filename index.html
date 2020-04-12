@@ -14,19 +14,21 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="images/landinc-logo.png" alt="LandInc logo">
-        </div>
-        <!-- Regular menu -->
-        <div class="nav-menu">
-            <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="content.html">Content</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/landinc-logo.png" alt="LandInc logo">
+            </div>
+            <!-- Regular menu -->
+            <div class="nav-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="content.html">Content</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <!-- Hamburger menu -->
         <div class="mobile-menu">
@@ -64,8 +66,11 @@
                 <div class="card-image">
                     <img src="images/art.svg" alt="Image of a computer screen with a graphic design tool">
                 </div>
-                <!-- This text will be displayed only in the mobile viewport -->
-                <p class="text4mobile">Kickstart your project with a beautiful layout</p>
+                <div class="card4flex">
+                    <!-- This text will be displayed only in the mobile viewport -->
+                    <p class="text4mobile">Kickstart your project with a beautiful layout</p>
+                    <div class="btn4mobile"><a href="content/design.html">DESIGN</a></div>
+                </div>
                 <ul>
                     <li>Kickstart your project with a beautiful layout</li>
                     <li>Adjustable design for mobile, tablet and desktop</li>
@@ -77,8 +82,11 @@
                 <div class="card-image">
                     <img src="images/data.svg" alt="Image of a computer screen with brackets and conding lines">
                 </div>
-                <!-- This text will be displayed only in the mobile viewport -->
-                <p class="text4mobile">Showcase your business in the best way possible</p>
+                <div class="card4flex">
+                    <!-- This text will be displayed only in the mobile viewport -->
+                    <p class="text4mobile">Showcase your business in the best way possible</p>  
+                    <div class="btn4mobile"><a href="content/web.html">WEB DEVELOPMENT</a></div>
+                </div>
                 <ul>
                     <li>Responsive web site that fits different devices</li>
                     <li>Showcase your business in the best way possible</li>
@@ -90,8 +98,11 @@
                 <div class="card-image">
                     <img src="images/camera.svg" alt="Image of a camera">
                 </div>
-                <!-- This text will be displayed only in the mobile viewport -->
-                <p class="text4mobile">Capture the most important moments of your event</p>
+                <div class="card4flex">
+                    <!-- This text will be displayed only in the mobile viewport -->
+                    <p class="text4mobile">Capture the most important moments of your event</p>
+                    <div class="btn4mobile"><a href="content/photo.html">PHOTOGRAPHY</a></div>
+                </div>
                 <ul>
                     <li>Capture the most important moments of your event</li>
                     <li>Every image tells its own story</li>
@@ -103,37 +114,18 @@
     </section>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container ">
             <div class="contact-footer">
-                <p>+1 (343) 202-3645</p>
-                <p>fernanda@landinc.com</p>
-            </div>
-            <div class="social-media">
-                <a><img src="images/instagram.svg"></a>
-                <a><img src="images/twitter.svg"></a>
-                <a><img src="images/facebook.svg"></a>
-            </div>
-            <div class="copyright">
-                <p>LandInc &copy 2020</p>
-            </div>
-            <div class="nav-footer">
-                <div class="nav-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="content.html">Content</a></li>
-                        </ul>
-                        <ul>
-                            <li> <a href="about.html">About</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="contact-phone">
+                    <p>+1 (343) 202-3645</p>
+                </div>
+                <div class="contact-email">
+                    <p>fernanda@landinc.com</p>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p>LandInc &copy; 2020</p>
         </div>
     </footer>
 
