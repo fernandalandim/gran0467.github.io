@@ -12,7 +12,7 @@ As I stated before I needed to know what was tangible while designing a layout. 
 
 **Masterhead banner:**
 
-I have to admit that this banner took me a lot of time to figure out how to do it. I knew that it was possible to do it using CSS and I since this whole process was a learning process I decided to give it a try. To crop the images with a polygon shape I used the ```clip-path```. For instance: ```clip-path: polygon(0 0, 110% 0%, 75% 100%, 0% 100%);```
+I have to admit that this banner took me a lot of time to figure out how to do it. I knew that it was possible to do it using CSS and since this whole process was a learning process I decided to give it a try. To crop the images with a polygon shape I used the ```clip-path```. For instance: ```clip-path: polygon(0 0, 110% 0%, 75% 100%, 0% 100%);```
 
 **Hiding contents:**
 
