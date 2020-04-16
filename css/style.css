@@ -37,7 +37,7 @@ button {
     width: 171px;
     height: 45px;
     margin: auto;
-    padding: 10px 20px;
+    padding: 10px 8%;
 }
 
 /* Menu for mobile viewport */
@@ -77,6 +77,7 @@ button {
 #myLinks a:hover {
     color: #ffffff;
     background-color: #B694EE;
+    
 }
 
 /* Class of Active to show the User in which page he/she is */
@@ -146,6 +147,7 @@ button {
 /** Buttons **/
 
 .btn4mobile {
+    display: block;
     width: 80%;
     height: 30px;
     background-color: #9D80CC;
@@ -154,22 +156,27 @@ button {
     cursor: pointer;
     margin: auto;
     margin-bottom: 20px;
-}
-
-.btn4mobile a {
     text-decoration: none;
     color: #ffffff;
-    font-size: .6rem;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .btn {
-    width: 100px;
+    display: block;
+    width: 100%;
     height: 30px;
     background-color: #9D80CC;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 30px auto;
 }
 
 /* This will hide the actual buttons in the Index mobile version */
@@ -179,15 +186,10 @@ button {
     display: none;
 }
 
-.btn a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: .6rem;
-    font-weight: 600;
-}
-
 .btn:active,
-.btn:hover {
+.btn:hover,
+.btn4mobile:active,
+.btn4mobile:hover {
     color: #ffffff;
     background-color: #B694EE;
 }
@@ -227,8 +229,7 @@ button {
 .content-web,
 .content-photo {
     width: 80%;
-    margin: auto;
-    padding-bottom: 30px;
+    margin: 30px auto;
 }
 
 .content img {
@@ -343,6 +344,10 @@ button {
     margin: 5px auto;
 }
 
+.dragon-boats img {
+    display: none;
+}
+
 .photo-text {
     width: 100%;
     margin: auto;
@@ -410,9 +415,21 @@ button {
 
 /**** CONTACT PAGE ****/
 
+section.contact-page {
+    height: 570px;
+}
 form {
     width: 100%;
     margin: auto;
+}
+
+.form-name h2,
+.form-email h2,
+.form-dropdown h2,
+.form-textarea h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .form-name textarea[placeholder],
@@ -452,7 +469,7 @@ form {
     height: 100px;
 }
 
-.submit-button {
+/* .submit-button {
     background-color: #9D80CC;
     width: 100%;
     color: #f2f2f2;
@@ -464,7 +481,7 @@ form {
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 50px;
-}
+} */
 
 /* The following lines will be responsible to add the hover effect to the button */
 .submit-button:link,
@@ -519,19 +536,21 @@ footer {
 
     .nav-container{
         width: 80%;
+        height: auto;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     .logo img {
-        padding-top: 15px;
+        margin: auto;
         padding-left: 0px;
     }
 
     .nav-menu {
-        display: inline;
-        margin: -15px;
+        display: inline-block;
+        margin: 0px 0px;
+        overflow: hidden;
     }
 
     .nav-menu ul {
@@ -544,7 +563,8 @@ footer {
         color: #ffffff;
         text-decoration: none;
         cursor: pointer;
-        padding: 20px;
+        padding: 25px 10px;
+        margin: -15px;
         display: flex;
         justify-content: space-between;
     }
@@ -563,7 +583,6 @@ footer {
         position: absolute;
         display: flex;
         overflow: hidden;
-
     }
 
     .banner01,
@@ -583,9 +602,7 @@ footer {
 
     section.content-home {
         margin-top: 500px;
-
     }
-
 
     .banner01 img {
         height: 60%;
@@ -615,6 +632,14 @@ footer {
     .content-home h2,
     .content-home p {
         font-size: 1.3rem;
+    }
+
+    .content-text {
+        display: block;
+    }
+    
+    .content .text4mobile {
+        display: none;
     }
     
     .cards {
@@ -665,19 +690,12 @@ footer {
     .card-design .btn,
     .card-web .btn,
     .card-photo .btn {
-        align-self: flex-end;
-        margin-bottom: 20px;
-        display: inline-block;
+        margin: 50px auto;
+        display: block;
         width: 90%;
     }
-    
-    .btn a {
-        font-size: .8rem;
-        font-weight: 700;
-        text-align: center;
-        align-self: center;
-        width: 90%;
-    }
+
+    /* NOTE AFTER THE QA: The button for the Content section in this viewport will still be 100%, just like in the mobile viewport, because it's a tablet. In order to have a good touch area for the button I decided to do it. */
 
     /** CONTENT - DESIGN **/
     .design {
@@ -749,6 +767,12 @@ footer {
     }
 
     /** CONTENT - PHOTO **/
+
+    .photography {
+        width: 100%;
+        margin: auto;
+    }
+
     .photo h1 {
         font-family: 'Raleway', sans-serif;
         font-size: 1.6rem;
@@ -765,13 +789,24 @@ footer {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-gap: 15px;
+        overflow: hidden;
     }
 
     .photo-images-mid {
-        overflow: hidden;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-gap: 15px;
+        overflow: hidden;
+    }
+
+    .photo-images03 {
+        display: none;
+    }
+
+    .dragon-boats img {
+        display: inline-block;
+        width: 100%;
+        margin: auto;
     }
 
     .photo-images-bot {
@@ -829,13 +864,18 @@ footer {
 
     footer {
         font-size: 1rem;
-        height: 100px;
+        height: 120px;
     }
  
 }
 
 /** DESKTOP - SECOND BREAKPOINT **/
 @media (min-width: 1000px) {
+
+    .nav-menu ul li a {
+        padding: 25px 15px;
+
+    }
 
     .content-home h1 {
         font-size: 2.2rem;
@@ -847,6 +887,12 @@ footer {
     }
 
     /* Masterhead banner*/ 
+    .master-container {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+
     .masterhead-banner {
         width: 100%;
         height: 410px;
@@ -854,7 +900,6 @@ footer {
         position: absolute;
         display: flex;
         overflow: hidden;
-
     }
 
     .banner01,
@@ -874,7 +919,7 @@ footer {
 
     section.content-home {
         margin-top: 500px;
-
+        height: 800px;
     }
 
     .cards {
@@ -945,6 +990,15 @@ footer {
         margin: auto;
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-photo {
+        margin-bottom: 60px;
+    }
+
     .content-box01,
     .content-box02,
     .content-box03 {
@@ -953,15 +1007,48 @@ footer {
         grid-gap: 20px;
     }
 
+    .content-box01 img,
+    .content-box02 img,
+    .content-box03 img {
+        margin-bottom: 20px;
+    }
+
+    .row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .row-reverse picture {
+        width: 100%;
+        margin-left: 20px;
+        justify-content: stretch;
+    }
+
+    .row-reverse .content-text {
+        width: 100%;
+    }
+
     .content .btn {
-        width: 50%;
+        width: 30%;    
     }
     
     .content .btn a {
         font-size: .9rem;
         font-weight: 700;
+        width: 100%;
         text-align: center;
         align-self: center;
+    }
+
+    .content-design .btn,
+    .content-photo .btn {
+        position: absolute;
+        float: left;
+    }
+
+    .content-web .btn {
+        position: relative;
+        float: right;
     }
 
     /** CONTENT - DESIGN **/
@@ -1030,6 +1117,14 @@ footer {
         grid-gap: 20px;
     }
 
+    .photo-images03 {
+        display: block;
+    }
+
+    .dragon-boats img {
+        display: none;
+    }
+
     .photo-images-bot {
         display: flex;
         flex-direction: row-reverse;
@@ -1038,6 +1133,7 @@ footer {
 
     .photo-images06 {
         width: 300vh;
+        padding-left: 20px;
     }
 
     .photo-list {
@@ -1069,9 +1165,15 @@ footer {
     }
 
     /** CONTACT **/
-    .submit-button {
-        width: 25%;
+
+    .form-btn {
+        margin: 30px 0px 30px auto;
+        display: block;
+        width: 40%;
     }
 
-   
+    footer {
+        height: 130px;
+    }
+]
 }

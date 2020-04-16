@@ -46,21 +46,21 @@
         </div>
     </header>
 
-    <section>
+    <section class="contact-page">
         <div class="form">
             <form>
                 <div class="columns2">
                     <div class="form-name">
-                        <label>Name</label>
+                        <h2>Name</h2>
                         <input class="insert-info" placeholder="Name">
                     </div>
                     <div class="form-email">
-                        <label>Email</label>
+                        <h2>Email</h2>
                         <input class="insert-info" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-dropdown">
-                    <label>Subject</label>
+                    <h2>Subject</h2>
                     <select class="dropdown-info">
                         <option selected>Choose one</option>
                         <option value="partnership">Partnership</option>
@@ -69,13 +69,13 @@
                     </select>
                 </div>
                 <div class="form-textarea">
-                    <label>Write your message here:</label>
+                    <h2>Write your message here:</h2>
                     <textarea class="message-box" placeholder="Let me know why are you contacting me"></textarea>
                 </div>
-                <a href="#" alert("Thank you for reaching out!")>
-                    <input type="submit" value="SUBMIT" class="submit-button">
-                </a>
             </form>
+            <div>
+                <a class="btn form-btn" href="#" onClick="alert('Thank you for reaching out!')">SUBMIT</a>
+            </div>
         </div>
     </section>
 
