@@ -1,0 +1,30 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+}
+
+div nav {
+    background-color: rgb(173, 173, 173);
+    width: 80%;
+    margin: auto;
+    
+}
+
+nav ul li {
+    
+    display: inline-block;
+    color: #fff;
+}
+
+.wrapper {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
